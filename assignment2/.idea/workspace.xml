@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="assignment2" targetName="assignment2" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6c3c689-3a55-42e4-addb-cd7395cc83be" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1ayhLdDLynJRgVbvGuviJTpAvoj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="assignment2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment2" TARGET_NAME="assignment2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment2" RUN_TARGET_NAME="assignment2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6c3c689-3a55-42e4-addb-cd7395cc83be" name="Default Changelist" comment="" />
+      <created>1587713685618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587713685618</updated>
+      <workItem from="1587713687385" duration="3871000" />
+      <workItem from="1587907850802" duration="8108000" />
+      <workItem from="1588082083671" duration="3731000" />
+      <workItem from="1588500452984" duration="19384000" />
+      <workItem from="1588648495804" duration="14171000" />
+      <workItem from="1588692410606" duration="452000" />
+      <workItem from="1588747371333" duration="5699000" />
+      <workItem from="1588826825192" duration="81067000" />
+      <workItem from="1589338823347" duration="344000" />
+      <workItem from="1589430590178" duration="5830000" />
+      <workItem from="1589966929949" duration="450000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="222" y="100" key="SettingsEditor" timestamp="1588835064014">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="222" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1588835064014" />
+    <state x="442" y="98" key="refactoring.ChangeSignatureDialog" timestamp="1588584330598">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="442" y="98" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1588584330598" />
+  </component>
+</project>

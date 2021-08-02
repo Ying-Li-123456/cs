@@ -1,0 +1,36 @@
+{kind: space, spelling: " ", line: 1, column: 1, length: 1}
+{kind: identifier, spelling: "hello", line: 1, column: 2, length: 5}
+{kind: space, spelling: " ", line: 1, column: 7, length: 1}
+{kind: identifier, spelling: "bobis97today", line: 1, column: 8, length: 12}
+{kind: space, spelling: " ", line: 1, column: 20, length: 1}
+{kind: identifier, spelling: "i8me", line: 1, column: 21, length: 4}
+{kind: space, spelling: " ", line: 1, column: 25, length: 1}
+{kind: newline, spelling: "\n", line: 1, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 2, column: 1, length: 1}
+{kind: space, spelling: " ", line: 3, column: 1, length: 1}
+{kind: space, spelling: " ", line: 3, column: 2, length: 1}
+{kind: space, spelling: " ", line: 3, column: 3, length: 1}
+{kind: space, spelling: " ", line: 3, column: 4, length: 1}
+{kind: identifier, spelling: "is_computer_systems____", line: 3, column: 5, length: 23}
+{kind: newline, spelling: "\n", line: 3, column: 28, length: 1}
+{kind: newline, spelling: "\n", line: 4, column: 1, length: 1}
+{kind: identifier, spelling: "I_know_too_much_and_8_my_lunch", line: 5, column: 1, length: 30}
+{kind: newline, spelling: "\n", line: 5, column: 31, length: 1}
+{kind: space, spelling: " ", line: 6, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 6, column: 2, length: 1}
+{kind: space, spelling: " ", line: 7, column: 1, length: 1}
+{kind: space, spelling: " ", line: 7, column: 2, length: 1}
+{kind: space, spelling: " ", line: 7, column: 3, length: 1}
+{kind: space, spelling: " ", line: 7, column: 4, length: 1}
+{kind: ., spelling: ".", line: 7, column: 5, length: 1}
+{kind: space, spelling: " ", line: 7, column: 6, length: 1}
+{kind: ., spelling: ".", line: 7, column: 7, length: 1}
+{kind: space, spelling: " ", line: 7, column: 8, length: 1}
+{kind: identifier, spelling: "heow.is.my.money$$$$$$$$_doing", line: 7, column: 9, length: 30}
+{kind: newline, spelling: "\n", line: 7, column: 39, length: 1}
+{kind: newline, spelling: "\n", line: 8, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 2, length: 1}
+{kind: space, spelling: " ", line: 9, column: 3, length: 1}
+{kind: space, spelling: " ", line: 9, column: 4, length: 1}
+Read 35 tokens

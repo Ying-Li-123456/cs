@@ -1,0 +1,10 @@
+function Main.main 0
+push constant 0
+push constant 32767
+push constant 1
+sub
+sub
+call Output.printInt 1
+pop temp 0
+push constant 0
+return

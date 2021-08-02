@@ -1,0 +1,191 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1, length: 37}
+{kind: eol_comment, spelling: " File name: projects/11/Pong/PongGame.jack", line: 4, column: 1, length: 45}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: adhoc_comment, spelling: "*\n * The Pong game.\n ", line: 6, column: 1, length: 25}
+{kind: newline, spelling: "\n", line: 8, column: 4, length: 1}
+{kind: identifier, spelling: "class", line: 9, column: 1, length: 5}
+{kind: space, spelling: " ", line: 9, column: 6, length: 1}
+{kind: identifier, spelling: "PongGame", line: 9, column: 7, length: 8}
+{kind: space, spelling: " ", line: 9, column: 15, length: 1}
+{kind: {, spelling: "{", line: 9, column: 16, length: 1}
+{kind: newline, spelling: "\n", line: 9, column: 17, length: 1}
+{kind: newline, spelling: "\n", line: 10, column: 1, length: 1}
+{kind: space, spelling: " ", line: 11, column: 1, length: 1}
+{kind: space, spelling: " ", line: 11, column: 2, length: 1}
+{kind: space, spelling: " ", line: 11, column: 3, length: 1}
+{kind: space, spelling: " ", line: 11, column: 4, length: 1}
+{kind: eol_comment, spelling: " The singlton ", line: 11, column: 5, length: 17}
+{kind: space, spelling: " ", line: 12, column: 1, length: 1}
+{kind: space, spelling: " ", line: 12, column: 2, length: 1}
+{kind: space, spelling: " ", line: 12, column: 3, length: 1}
+{kind: space, spelling: " ", line: 12, column: 4, length: 1}
+{kind: identifier, spelling: "static", line: 12, column: 5, length: 6}
+{kind: space, spelling: " ", line: 12, column: 11, length: 1}
+{kind: identifier, spelling: "PongGame", line: 12, column: 12, length: 8}
+{kind: space, spelling: " ", line: 12, column: 20, length: 1}
+{kind: identifier, spelling: "instance", line: 12, column: 21, length: 8}
+{kind: ;, spelling: ";", line: 12, column: 29, length: 1}
+{kind: newline, spelling: "\n", line: 12, column: 30, length: 1}
+{kind: newline, spelling: "\n", line: 13, column: 1, length: 1}
+{kind: space, spelling: " ", line: 14, column: 1, length: 1}
+{kind: space, spelling: " ", line: 14, column: 2, length: 1}
+{kind: space, spelling: " ", line: 14, column: 3, length: 1}
+{kind: space, spelling: " ", line: 14, column: 4, length: 1}
+{kind: eol_comment, spelling: " The bat", line: 14, column: 5, length: 11}
+{kind: space, spelling: " ", line: 15, column: 1, length: 1}
+{kind: space, spelling: " ", line: 15, column: 2, length: 1}
+{kind: space, spelling: " ", line: 15, column: 3, length: 1}
+{kind: space, spelling: " ", line: 15, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 15, column: 5, length: 5}
+{kind: space, spelling: " ", line: 15, column: 10, length: 1}
+{kind: identifier, spelling: "Bat", line: 15, column: 11, length: 3}
+{kind: space, spelling: " ", line: 15, column: 14, length: 1}
+{kind: identifier, spelling: "bat", line: 15, column: 15, length: 3}
+{kind: ;, spelling: ";", line: 15, column: 18, length: 1}
+{kind: newline, spelling: "\n", line: 15, column: 19, length: 1}
+{kind: newline, spelling: "\n", line: 16, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 2, length: 1}
+{kind: space, spelling: " ", line: 17, column: 3, length: 1}
+{kind: space, spelling: " ", line: 17, column: 4, length: 1}
+{kind: eol_comment, spelling: " The ball", line: 17, column: 5, length: 12}
+{kind: space, spelling: " ", line: 18, column: 1, length: 1}
+{kind: space, spelling: " ", line: 18, column: 2, length: 1}
+{kind: space, spelling: " ", line: 18, column: 3, length: 1}
+{kind: space, spelling: " ", line: 18, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 18, column: 5, length: 5}
+{kind: space, spelling: " ", line: 18, column: 10, length: 1}
+{kind: identifier, spelling: "Ball", line: 18, column: 11, length: 4}
+{kind: space, spelling: " ", line: 18, column: 15, length: 1}
+{kind: identifier, spelling: "ball", line: 18, column: 16, length: 4}
+{kind: ;, spelling: ";", line: 18, column: 20, length: 1}
+{kind: newline, spelling: "\n", line: 18, column: 21, length: 1}
+{kind: newline, spelling: "\n", line: 19, column: 1, length: 1}
+{kind: space, spelling: " ", line: 20, column: 1, length: 1}
+{kind: space, spelling: " ", line: 20, column: 2, length: 1}
+{kind: space, spelling: " ", line: 20, column: 3, length: 1}
+{kind: space, spelling: " ", line: 20, column: 4, length: 1}
+{kind: eol_comment, spelling: " The current wall that the ball is bouncing from.", line: 20, column: 5, length: 52}
+{kind: space, spelling: " ", line: 21, column: 1, length: 1}
+{kind: space, spelling: " ", line: 21, column: 2, length: 1}
+{kind: space, spelling: " ", line: 21, column: 3, length: 1}
+{kind: space, spelling: " ", line: 21, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 21, column: 5, length: 5}
+{kind: space, spelling: " ", line: 21, column: 10, length: 1}
+{kind: identifier, spelling: "int", line: 21, column: 11, length: 3}
+{kind: space, spelling: " ", line: 21, column: 14, length: 1}
+{kind: identifier, spelling: "wall", line: 21, column: 15, length: 4}
+{kind: ;, spelling: ";", line: 21, column: 19, length: 1}
+{kind: newline, spelling: "\n", line: 21, column: 20, length: 1}
+{kind: newline, spelling: "\n", line: 22, column: 1, length: 1}
+{kind: space, spelling: " ", line: 23, column: 1, length: 1}
+{kind: space, spelling: " ", line: 23, column: 2, length: 1}
+{kind: space, spelling: " ", line: 23, column: 3, length: 1}
+{kind: space, spelling: " ", line: 23, column: 4, length: 1}
+{kind: eol_comment, spelling: " True when the game is over", line: 23, column: 5, length: 30}
+{kind: space, spelling: " ", line: 24, column: 1, length: 1}
+{kind: space, spelling: " ", line: 24, column: 2, length: 1}
+{kind: space, spelling: " ", line: 24, column: 3, length: 1}
+{kind: space, spelling: " ", line: 24, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 24, column: 5, length: 5}
+{kind: space, spelling: " ", line: 24, column: 10, length: 1}
+{kind: identifier, spelling: "boolean", line: 24, column: 11, length: 7}
+{kind: space, spelling: " ", line: 24, column: 18, length: 1}
+{kind: identifier, spelling: "exit", line: 24, column: 19, length: 4}
+{kind: ;, spelling: ";", line: 24, column: 23, length: 1}
+{kind: newline, spelling: "\n", line: 24, column: 24, length: 1}
+{kind: newline, spelling: "\n", line: 25, column: 1, length: 1}
+{kind: space, spelling: " ", line: 26, column: 1, length: 1}
+{kind: space, spelling: " ", line: 26, column: 2, length: 1}
+{kind: space, spelling: " ", line: 26, column: 3, length: 1}
+{kind: space, spelling: " ", line: 26, column: 4, length: 1}
+{kind: eol_comment, spelling: " The current score.", line: 26, column: 5, length: 22}
+{kind: space, spelling: " ", line: 27, column: 1, length: 1}
+{kind: space, spelling: " ", line: 27, column: 2, length: 1}
+{kind: space, spelling: " ", line: 27, column: 3, length: 1}
+{kind: space, spelling: " ", line: 27, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 27, column: 5, length: 5}
+{kind: space, spelling: " ", line: 27, column: 10, length: 1}
+{kind: identifier, spelling: "int", line: 27, column: 11, length: 3}
+{kind: space, spelling: " ", line: 27, column: 14, length: 1}
+{kind: identifier, spelling: "score", line: 27, column: 15, length: 5}
+{kind: ;, spelling: ";", line: 27, column: 20, length: 1}
+{kind: newline, spelling: "\n", line: 27, column: 21, length: 1}
+{kind: newline, spelling: "\n", line: 28, column: 1, length: 1}
+{kind: space, spelling: " ", line: 29, column: 1, length: 1}
+{kind: space, spelling: " ", line: 29, column: 2, length: 1}
+{kind: space, spelling: " ", line: 29, column: 3, length: 1}
+{kind: space, spelling: " ", line: 29, column: 4, length: 1}
+{kind: eol_comment, spelling: " The last wall that the ball bounced from.", line: 29, column: 5, length: 45}
+{kind: space, spelling: " ", line: 30, column: 1, length: 1}
+{kind: space, spelling: " ", line: 30, column: 2, length: 1}
+{kind: space, spelling: " ", line: 30, column: 3, length: 1}
+{kind: space, spelling: " ", line: 30, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 30, column: 5, length: 5}
+{kind: space, spelling: " ", line: 30, column: 10, length: 1}
+{kind: identifier, spelling: "int", line: 30, column: 11, length: 3}
+{kind: space, spelling: " ", line: 30, column: 14, length: 1}
+{kind: identifier, spelling: "lastWall", line: 30, column: 15, length: 8}
+{kind: ;, spelling: ";", line: 30, column: 23, length: 1}
+{kind: newline, spelling: "\n", line: 30, column: 24, length: 1}
+{kind: newline, spelling: "\n", line: 31, column: 1, length: 1}
+{kind: space, spelling: " ", line: 32, column: 1, length: 1}
+{kind: space, spelling: " ", line: 32, column: 2, length: 1}
+{kind: space, spelling: " ", line: 32, column: 3, length: 1}
+{kind: space, spelling: " ", line: 32, column: 4, length: 1}
+{kind: eol_comment, spelling: " The current width of the bat", line: 32, column: 5, length: 32}
+{kind: space, spelling: " ", line: 33, column: 1, length: 1}
+{kind: space, spelling: " ", line: 33, column: 2, length: 1}
+{kind: space, spelling: " ", line: 33, column: 3, length: 1}
+{kind: space, spelling: " ", line: 33, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 33, column: 5, length: 5}
+{kind: space, spelling: " ", line: 33, column: 10, length: 1}
+{kind: identifier, spelling: "int", line: 33, column: 11, length: 3}
+{kind: space, spelling: " ", line: 33, column: 14, length: 1}
+{kind: identifier, spelling: "batWidth", line: 33, column: 15, length: 8}
+{kind: ;, spelling: ";", line: 33, column: 23, length: 1}
+{kind: newline, spelling: "\n", line: 33, column: 24, length: 1}
+{kind: newline, spelling: "\n", line: 34, column: 1, length: 1}
+{kind: space, spelling: " ", line: 35, column: 1, length: 1}
+{kind: space, spelling: " ", line: 35, column: 2, length: 1}
+{kind: space, spelling: " ", line: 35, column: 3, length: 1}
+{kind: space, spelling: " ", line: 35, column: 4, length: 1}
+{kind: adhoc_comment, spelling: "* Constructs a new Pong Game. ", line: 35, column: 5, length: 34}
+{kind: newline, spelling: "\n", line: 35, column: 39, length: 1}
+{kind: space, spelling: " ", line: 36, column: 1, length: 1}
+{kind: space, spelling: " ", line: 36, column: 2, length: 1}
+{kind: space, spelling: " ", line: 36, column: 3, length: 1}
+{kind: space, spelling: " ", line: 36, column: 4, length: 1}
+{kind: identifier, spelling: "constructor", line: 36, column: 5, length: 11}
+{kind: space, spelling: " ", line: 36, column: 16, length: 1}
+{kind: identifier, spelling: "PongGame", line: 36, column: 17, length: 8}
+{kind: space, spelling: " ", line: 36, column: 25, length: 1}
+{kind: identifier, spelling: "new", line: 36, column: 26, length: 3}
+{kind: (, spelling: "(", line: 36, column: 29, length: 1}
+{kind: ), spelling: ")", line: 36, column: 30, length: 1}
+{kind: space, spelling: " ", line: 36, column: 31, length: 1}
+{kind: {, spelling: "{", line: 36, column: 32, length: 1}
+{kind: newline, spelling: "\n", line: 36, column: 33, length: 1}
+{kind: space, spelling: " ", line: 37, column: 1, length: 1}
+{kind: space, spelling: " ", line: 37, column: 2, length: 1}
+{kind: space, spelling: " ", line: 37, column: 3, length: 1}
+{kind: space, spelling: " ", line: 37, column: 4, length: 1}
+{kind: do, spelling: "do", line: 37, column: 5, length: 2}
+{kind: space, spelling: " ", line: 37, column: 7, length: 1}
+{kind: identifier, spelling: "Screen.clearScreen", line: 37, column: 8, length: 18}
+{kind: (, spelling: "(", line: 37, column: 26, length: 1}
+{kind: ), spelling: ")", line: 37, column: 27, length: 1}
+{kind: ;, spelling: ";", line: 37, column: 28, length: 1}
+{kind: newline, spelling: "\n", line: 37, column: 29, length: 1}
+{kind: newline, spelling: "\n", line: 38, column: 1, length: 1}
+{kind: space, spelling: " ", line: 39, column: 1, length: 1}
+{kind: space, spelling: " ", line: 39, column: 2, length: 1}
+{kind: space, spelling: " ", line: 39, column: 3, length: 1}
+{kind: space, spelling: " ", line: 39, column: 4, length: 1}
+{kind: identifier, spelling: "let", line: 39, column: 5, length: 3}
+{kind: space, spelling: " ", line: 39, column: 8, length: 1}
+{kind: identifier, spelling: "batWidth", line: 39, column: 9, length: 8}
+{kind: space, spelling: " ", line: 39, column: 17, length: 1}
+Read 190 tokens

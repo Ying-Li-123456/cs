@@ -1,0 +1,1743 @@
+Read 575 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 574
+    {kind: newline, spelling: "\n", line: 37, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  36: $
+  37: }$
+       ^
+
+----------------
+token: 569
+    {kind: space, spelling: " ", line: 35, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  34:         return;$
+  35:     
+         ^
+
+----------------
+token: 564
+    {kind: ;, spelling: ";", line: 34, column: 15, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  33:         $
+  34:         return;
+                    ^
+
+----------------
+token: 559
+    {kind: space, spelling: " ", line: 34, column: 5, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  33:         $
+  34:      
+          ^
+
+----------------
+token: 554
+    {kind: newline, spelling: "\n", line: 33, column: 9, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  32:         do Screen.drawLine(117,35,102,20);       $
+  33:         $
+              ^
+
+----------------
+token: 549
+    {kind: space, spelling: " ", line: 33, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  32:         do Screen.drawLine(117,35,102,20);       $
+  33:     
+         ^
+
+----------------
+token: 544
+    {kind: space, spelling: " ", line: 32, column: 49, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:         do Screen.drawLine(117,35,102,20);       
+                                                      ^
+
+----------------
+token: 539
+    {kind: space, spelling: " ", line: 32, column: 44, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:         do Screen.drawLine(117,35,102,20);  
+                                                 ^
+
+----------------
+token: 534
+    {kind: ,, spelling: ",", line: 32, column: 38, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:         do Screen.drawLine(117,35,102,
+                                           ^
+
+----------------
+token: 529
+    {kind: integer, spelling: "117", line: 32, column: 28, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:         do Screen.drawLine(117
+                                 ^
+
+----------------
+token: 524
+    {kind: space, spelling: " ", line: 32, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:         
+             ^
+
+----------------
+token: 519
+    {kind: space, spelling: " ", line: 32, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31:         do Screen.drawLine(106,60,86,60);       $
+  32:    
+        ^
+
+----------------
+token: 514
+    {kind: space, spelling: " ", line: 31, column: 47, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:         do Screen.drawLine(106,60,86,60);      
+                                                    ^
+
+----------------
+token: 509
+    {kind: space, spelling: " ", line: 31, column: 42, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:         do Screen.drawLine(106,60,86,60); 
+                                               ^
+
+----------------
+token: 504
+    {kind: integer, spelling: "86", line: 31, column: 35, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:         do Screen.drawLine(106,60,86
+                                        ^
+
+----------------
+token: 499
+    {kind: (, spelling: "(", line: 31, column: 27, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:         do Screen.drawLine(
+                                ^
+
+----------------
+token: 494
+    {kind: space, spelling: " ", line: 31, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:        
+            ^
+
+----------------
+token: 489
+    {kind: space, spelling: " ", line: 31, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  30:         do Screen.drawLine(117,85,102,100);       $
+  31:   
+       ^
+
+----------------
+token: 484
+    {kind: space, spelling: " ", line: 30, column: 48, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:         do Screen.drawLine(117,85,102,100);     
+                                                     ^
+
+----------------
+token: 479
+    {kind: ;, spelling: ";", line: 30, column: 43, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:         do Screen.drawLine(117,85,102,100);
+                                                ^
+
+----------------
+token: 474
+    {kind: ,, spelling: ",", line: 30, column: 34, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:         do Screen.drawLine(117,85,
+                                       ^
+
+----------------
+token: 469
+    {kind: identifier, spelling: "Screen.drawLine", line: 30, column: 12, length: 15}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:         do Screen.drawLine
+                 ^
+
+----------------
+token: 464
+    {kind: space, spelling: " ", line: 30, column: 6, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:       
+           ^
+
+----------------
+token: 459
+    {kind: space, spelling: " ", line: 30, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         do Screen.drawLine(140,94,140,114);       $
+  30:  
+      ^
+
+----------------
+token: 454
+    {kind: space, spelling: " ", line: 29, column: 47, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:         do Screen.drawLine(163,85,178,100);       $
+  29:         do Screen.drawLine(140,94,140,114);    
+                                                    ^
+
+----------------
+token: 449
+    {kind: ), spelling: ")", line: 29, column: 42, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  28:         do Screen.drawLine(163,85,178,100);       $
+  29:         do Screen.drawLine(140,94,140,114)
+                                               ^
+
+----------------
+token: 444
+    {kind: integer, spelling: "94", line: 29, column: 32, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:         do Screen.drawLine(163,85,178,100);       $
+  29:         do Screen.drawLine(140,94
+                                     ^
+
+----------------
+token: 439
+    {kind: space, spelling: " ", line: 29, column: 11, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:         do Screen.drawLine(163,85,178,100);       $
+  29:         do 
+                ^
+
+----------------
+token: 434
+    {kind: space, spelling: " ", line: 29, column: 5, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:         do Screen.drawLine(163,85,178,100);       $
+  29:      
+          ^
+
+----------------
+token: 429
+    {kind: newline, spelling: "\n", line: 28, column: 51, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:         do Screen.drawLine(163,85,178,100);       $
+                                                        ^
+
+----------------
+token: 424
+    {kind: space, spelling: " ", line: 28, column: 46, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:         do Screen.drawLine(163,85,178,100);   
+                                                   ^
+
+----------------
+token: 419
+    {kind: integer, spelling: "100", line: 28, column: 39, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:         do Screen.drawLine(163,85,178,100
+                                            ^
+
+----------------
+token: 414
+    {kind: ,, spelling: ",", line: 28, column: 31, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:         do Screen.drawLine(163,
+                                    ^
+
+----------------
+token: 409
+    {kind: do, spelling: "do", line: 28, column: 9, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns true
+    token_is(token,symbol) returns false
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:         do
+              ^
+
+----------------
+token: 404
+    {kind: space, spelling: " ", line: 28, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:         do Screen.drawLine(174,60,194,60);       $
+  28:     
+         ^
+
+----------------
+token: 399
+    {kind: space, spelling: " ", line: 27, column: 49, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:         do Screen.drawLine(174,60,194,60);       
+                                                      ^
+
+----------------
+token: 394
+    {kind: space, spelling: " ", line: 27, column: 44, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:         do Screen.drawLine(174,60,194,60);  
+                                                 ^
+
+----------------
+token: 389
+    {kind: ,, spelling: ",", line: 27, column: 38, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:         do Screen.drawLine(174,60,194,
+                                           ^
+
+----------------
+token: 384
+    {kind: integer, spelling: "174", line: 27, column: 28, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:         do Screen.drawLine(174
+                                 ^
+
+----------------
+token: 379
+    {kind: space, spelling: " ", line: 27, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:         
+             ^
+
+----------------
+token: 374
+    {kind: space, spelling: " ", line: 27, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:         do Screen.drawLine(163,35,178,20);       $
+  27:    
+        ^
+
+----------------
+token: 369
+    {kind: space, spelling: " ", line: 26, column: 48, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:         do Screen.drawLine(163,35,178,20);      
+                                                     ^
+
+----------------
+token: 364
+    {kind: space, spelling: " ", line: 26, column: 43, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:         do Screen.drawLine(163,35,178,20); 
+                                                ^
+
+----------------
+token: 359
+    {kind: integer, spelling: "178", line: 26, column: 35, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:         do Screen.drawLine(163,35,178
+                                        ^
+
+----------------
+token: 354
+    {kind: (, spelling: "(", line: 26, column: 27, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:         do Screen.drawLine(
+                                ^
+
+----------------
+token: 349
+    {kind: space, spelling: " ", line: 26, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:        
+            ^
+
+----------------
+token: 344
+    {kind: space, spelling: " ", line: 26, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:         do Screen.drawLine(140,26, 140, 6);       $
+  26:   
+       ^
+
+----------------
+token: 339
+    {kind: space, spelling: " ", line: 25, column: 48, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:         do Screen.drawLine(140,26, 140, 6);     
+                                                     ^
+
+----------------
+token: 334
+    {kind: ;, spelling: ";", line: 25, column: 43, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:         do Screen.drawLine(140,26, 140, 6);
+                                                ^
+
+----------------
+token: 329
+    {kind: integer, spelling: "140", line: 25, column: 36, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:         do Screen.drawLine(140,26, 140
+                                         ^
+
+----------------
+token: 324
+    {kind: integer, spelling: "140", line: 25, column: 28, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:         do Screen.drawLine(140
+                                 ^
+
+----------------
+token: 319
+    {kind: space, spelling: " ", line: 25, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:         
+             ^
+
+----------------
+token: 314
+    {kind: space, spelling: " ", line: 25, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24:         do Screen.drawCircle(140,60,30);          // sun$
+  25:    
+        ^
+
+----------------
+token: 309
+    {kind: space, spelling: " ", line: 24, column: 49, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23: $
+  24:         do Screen.drawCircle(140,60,30);         
+                                                      ^
+
+----------------
+token: 304
+    {kind: space, spelling: " ", line: 24, column: 44, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23: $
+  24:         do Screen.drawCircle(140,60,30);    
+                                                 ^
+
+----------------
+token: 299
+    {kind: ), spelling: ")", line: 24, column: 39, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  23: $
+  24:         do Screen.drawCircle(140,60,30)
+                                            ^
+
+----------------
+token: 294
+    {kind: integer, spelling: "140", line: 24, column: 30, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23: $
+  24:         do Screen.drawCircle(140
+                                   ^
+
+----------------
+token: 289
+    {kind: space, spelling: " ", line: 24, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23: $
+  24:         
+             ^
+
+----------------
+token: 284
+    {kind: space, spelling: " ", line: 24, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23: $
+  24:    
+        ^
+
+----------------
+token: 279
+    {kind: space, spelling: " ", line: 22, column: 50, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:         do Screen.drawLine(345,35,410,90);        
+                                                       ^
+
+----------------
+token: 274
+    {kind: space, spelling: " ", line: 22, column: 45, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:         do Screen.drawLine(345,35,410,90);   
+                                                  ^
+
+----------------
+token: 269
+    {kind: integer, spelling: "90", line: 22, column: 39, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:         do Screen.drawLine(345,35,410,90
+                                            ^
+
+----------------
+token: 264
+    {kind: ,, spelling: ",", line: 22, column: 31, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:         do Screen.drawLine(345,
+                                    ^
+
+----------------
+token: 259
+    {kind: do, spelling: "do", line: 22, column: 9, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns true
+    token_is(token,symbol) returns false
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:         do
+              ^
+
+----------------
+token: 254
+    {kind: space, spelling: " ", line: 22, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:         do Screen.drawLine(280,90,345,35);        // roof$
+  22:     
+         ^
+
+----------------
+token: 249
+    {kind: space, spelling: " ", line: 21, column: 50, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:         do Screen.drawLine(280,90,345,35);        
+                                                       ^
+
+----------------
+token: 244
+    {kind: space, spelling: " ", line: 21, column: 45, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:         do Screen.drawLine(280,90,345,35);   
+                                                  ^
+
+----------------
+token: 239
+    {kind: integer, spelling: "35", line: 21, column: 39, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:         do Screen.drawLine(280,90,345,35
+                                            ^
+
+----------------
+token: 234
+    {kind: ,, spelling: ",", line: 21, column: 31, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:         do Screen.drawLine(280,
+                                    ^
+
+----------------
+token: 229
+    {kind: do, spelling: "do", line: 21, column: 9, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns true
+    token_is(token,symbol) returns false
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:         do
+              ^
+
+----------------
+token: 224
+    {kind: space, spelling: " ", line: 21, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20:         do Screen.drawCircle(360,170,3);          // door handle$
+  21:     
+         ^
+
+----------------
+token: 219
+    {kind: space, spelling: " ", line: 20, column: 50, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:         do Screen.setColor(true); $
+  20:         do Screen.drawCircle(360,170,3);          
+                                                       ^
+
+----------------
+token: 214
+    {kind: space, spelling: " ", line: 20, column: 45, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:         do Screen.setColor(true); $
+  20:         do Screen.drawCircle(360,170,3);     
+                                                  ^
+
+----------------
+token: 209
+    {kind: ;, spelling: ";", line: 20, column: 40, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  19:         do Screen.setColor(true); $
+  20:         do Screen.drawCircle(360,170,3);
+                                             ^
+
+----------------
+token: 204
+    {kind: ,, spelling: ",", line: 20, column: 33, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  19:         do Screen.setColor(true); $
+  20:         do Screen.drawCircle(360,
+                                      ^
+
+----------------
+token: 199
+    {kind: do, spelling: "do", line: 20, column: 9, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns true
+    token_is(token,symbol) returns false
+token_context:
+  19:         do Screen.setColor(true); $
+  20:         do
+              ^
+
+----------------
+token: 194
+    {kind: space, spelling: " ", line: 20, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:         do Screen.setColor(true); $
+  20:     
+         ^
+
+----------------
+token: 189
+    {kind: space, spelling: " ", line: 19, column: 34, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:         $
+  19:         do Screen.setColor(true); 
+                                       ^
+
+----------------
+token: 184
+    {kind: identifier, spelling: "Screen.setColor", line: 19, column: 12, length: 15}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:         $
+  19:         do Screen.setColor
+                 ^
+
+----------------
+token: 179
+    {kind: space, spelling: " ", line: 19, column: 6, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:         $
+  19:       
+           ^
+
+----------------
+token: 174
+    {kind: space, spelling: " ", line: 19, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:         $
+  19:  
+      ^
+
+----------------
+token: 169
+    {kind: space, spelling: " ", line: 18, column: 5, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  17:         do Screen.drawRectangle(292,120,332,150); // window$
+  18:      
+          ^
+
+----------------
+token: 164
+    {kind: eol_comment, spelling: " window", line: 17, column: 51, length: 10}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16:         do Screen.drawRectangle(350,120,390,219); // door$
+  17:         do Screen.drawRectangle(292,120,332,150); // window$
+                                                        ^
+
+----------------
+token: 159
+    {kind: ,, spelling: ",", line: 17, column: 44, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  16:         do Screen.drawRectangle(350,120,390,219); // door$
+  17:         do Screen.drawRectangle(292,120,332,
+                                                 ^
+
+----------------
+token: 154
+    {kind: integer, spelling: "292", line: 17, column: 33, length: 3}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16:         do Screen.drawRectangle(350,120,390,219); // door$
+  17:         do Screen.drawRectangle(292
+                                      ^
+
+----------------
+token: 149
+    {kind: space, spelling: " ", line: 17, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16:         do Screen.drawRectangle(350,120,390,219); // door$
+  17:         
+             ^
+
+----------------
+token: 144
+    {kind: space, spelling: " ", line: 17, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16:         do Screen.drawRectangle(350,120,390,219); // door$
+  17:    
+        ^
+
+----------------
+token: 139
+    {kind: ;, spelling: ";", line: 16, column: 49, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  15:         do Screen.setColor(false); $
+  16:         do Screen.drawRectangle(350,120,390,219);
+                                                      ^
+
+----------------
+token: 134
+    {kind: ,, spelling: ",", line: 16, column: 40, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  15:         do Screen.setColor(false); $
+  16:         do Screen.drawRectangle(350,120,
+                                             ^
+
+----------------
+token: 129
+    {kind: identifier, spelling: "Screen.drawRectangle", line: 16, column: 12, length: 20}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:         do Screen.setColor(false); $
+  16:         do Screen.drawRectangle
+                 ^
+
+----------------
+token: 124
+    {kind: space, spelling: " ", line: 16, column: 6, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:         do Screen.setColor(false); $
+  16:       
+           ^
+
+----------------
+token: 119
+    {kind: space, spelling: " ", line: 16, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:         do Screen.setColor(false); $
+  16:  
+      ^
+
+----------------
+token: 114
+    {kind: identifier, spelling: "false", line: 15, column: 28, length: 5}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14:         $
+  15:         do Screen.setColor(false
+                                 ^
+
+----------------
+token: 109
+    {kind: space, spelling: " ", line: 15, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14:         $
+  15:         
+             ^
+
+----------------
+token: 104
+    {kind: space, spelling: " ", line: 15, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14:         $
+  15:    
+        ^
+
+----------------
+token: 99
+    {kind: space, spelling: " ", line: 14, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  13:         do Screen.drawRectangle(280,90,410,220);  // house$
+  14:        
+            ^
+
+----------------
+token: 94
+    {kind: space, spelling: " ", line: 14, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  13:         do Screen.drawRectangle(280,90,410,220);  // house$
+  14:   
+       ^
+
+----------------
+token: 89
+    {kind: ;, spelling: ";", line: 13, column: 48, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  12:         do Screen.drawLine(0,220,511,220);        // base line$
+  13:         do Screen.drawRectangle(280,90,410,220);
+                                                     ^
+
+----------------
+token: 84
+    {kind: ,, spelling: ",", line: 13, column: 39, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  12:         do Screen.drawLine(0,220,511,220);        // base line$
+  13:         do Screen.drawRectangle(280,90,
+                                            ^
+
+----------------
+token: 79
+    {kind: identifier, spelling: "Screen.drawRectangle", line: 13, column: 12, length: 20}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  12:         do Screen.drawLine(0,220,511,220);        // base line$
+  13:         do Screen.drawRectangle
+                 ^
+
+----------------
+token: 74
+    {kind: space, spelling: " ", line: 13, column: 6, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  12:         do Screen.drawLine(0,220,511,220);        // base line$
+  13:       
+           ^
+
+----------------
+token: 69
+    {kind: space, spelling: " ", line: 13, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  12:         do Screen.drawLine(0,220,511,220);        // base line$
+  13:  
+      ^
+
+----------------
+token: 64
+    {kind: space, spelling: " ", line: 12, column: 47, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     $
+  12:         do Screen.drawLine(0,220,511,220);     
+                                                    ^
+
+----------------
+token: 59
+    {kind: ;, spelling: ";", line: 12, column: 42, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  11:     $
+  12:         do Screen.drawLine(0,220,511,220);
+                                               ^
+
+----------------
+token: 54
+    {kind: ,, spelling: ",", line: 12, column: 33, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  11:     $
+  12:         do Screen.drawLine(0,220,
+                                      ^
+
+----------------
+token: 49
+    {kind: identifier, spelling: "Screen.drawLine", line: 12, column: 12, length: 15}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     $
+  12:         do Screen.drawLine
+                 ^
+
+----------------
+token: 44
+    {kind: space, spelling: " ", line: 12, column: 6, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     $
+  12:       
+           ^
+
+----------------
+token: 39
+    {kind: space, spelling: " ", line: 12, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     $
+  12:  
+      ^
+
+----------------
+token: 34
+    {kind: space, spelling: " ", line: 11, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  10:     function void main() {$
+  11:  
+      ^
+
+----------------
+token: 29
+    {kind: (, spelling: "(", line: 10, column: 23, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+   9:     /** Draws a sample pictue on the screen using lines and circles. */$
+  10:     function void main(
+                            ^
+
+----------------
+token: 24
+    {kind: identifier, spelling: "function", line: 10, column: 5, length: 8}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   9:     /** Draws a sample pictue on the screen using lines and circles. */$
+  10:     function
+          ^
+
+----------------
+token: 19
+    {kind: newline, spelling: "\n", line: 9, column: 72, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   8: $
+   9:     /** Draws a sample pictue on the screen using lines and circles. */$
+                                                                             ^
+
+----------------
+token: 14
+    {kind: space, spelling: " ", line: 9, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   8: $
+   9:  
+      ^
+
+----------------
+token: 9
+    {kind: identifier, spelling: "Main", line: 7, column: 7, length: 4}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   6: /** Test program for the OS Screen class. */$
+   7: class Main
+            ^
+
+----------------
+token: 4
+    {kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   4: // File name: projects/12/ScreenTest/Main.jack$
+   5: $
+      ^
+
+----------------

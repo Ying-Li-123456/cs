@@ -1,0 +1,22 @@
+{kind: space, spelling: " ", line: 1, column: 1, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 2, length: 1}
+{kind: space, spelling: " ", line: 1, column: 3, length: 1}
+{kind: float, spelling: "4.3", line: 1, column: 4, length: 3}
+{kind: space, spelling: " ", line: 1, column: 7, length: 1}
+{kind: scientific, spelling: "3.6e-89", line: 1, column: 8, length: 7}
+{kind: space, spelling: " ", line: 1, column: 15, length: 1}
+{kind: scientific, spelling: "1.212534e+13", line: 1, column: 16, length: 10}
+{kind: space, spelling: " ", line: 1, column: 26, length: 1}
+{kind: scientific, spelling: "8.88e+2", line: 1, column: 27, length: 5}
+{kind: space, spelling: " ", line: 1, column: 32, length: 1}
+{kind: integer, spelling: "34", line: 1, column: 33, length: 2}
+{kind: space, spelling: " ", line: 1, column: 35, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 36, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 37, length: 1}
+{kind: scientific, spelling: "0.0e+0", line: 1, column: 38, length: 11}
+{kind: integer, spelling: "0", line: 1, column: 49, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 50, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 51, length: 1}
+{kind: integer, spelling: "8", line: 1, column: 52, length: 1}
+{kind: space, spelling: " ", line: 1, column: 53, length: 1}
+Read 21 tokens

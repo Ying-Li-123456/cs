@@ -1,0 +1,83 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1, length: 37}
+{kind: eol_comment, spelling: " File name: projects/10/ExpressionlessSquare/SquareGame.jack", line: 4, column: 1, length: 63}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: eol_comment, spelling: " Expressionless version of Square.jack.", line: 6, column: 1, length: 42}
+{kind: newline, spelling: "\n", line: 7, column: 1, length: 1}
+{kind: adhoc_comment, spelling: "*\n * The SquareDance class implements the Square Dance game.\n * In this game you can move a black square around the screen and\n * change its size during the movement.\n * In the beggining, the square is located at the top left corner.\n * Use the arrow keys to move the square.\n * Use 'z' & 'x' to decrement & increment the size.\n * Use 'q' to quit.\n ", line: 8, column: 1, length: 353}
+{kind: newline, spelling: "\n", line: 16, column: 4, length: 1}
+{kind: identifier, spelling: "class", line: 17, column: 1, length: 5}
+{kind: space, spelling: " ", line: 17, column: 6, length: 1}
+{kind: identifier, spelling: "SquareGame", line: 17, column: 7, length: 10}
+{kind: space, spelling: " ", line: 17, column: 17, length: 1}
+{kind: {, spelling: "{", line: 17, column: 18, length: 1}
+{kind: newline, spelling: "\n", line: 17, column: 19, length: 1}
+{kind: newline, spelling: "\n", line: 18, column: 1, length: 1}
+{kind: space, spelling: " ", line: 19, column: 1, length: 1}
+{kind: space, spelling: " ", line: 19, column: 2, length: 1}
+{kind: space, spelling: " ", line: 19, column: 3, length: 1}
+{kind: space, spelling: " ", line: 19, column: 4, length: 1}
+{kind: eol_comment, spelling: " The square", line: 19, column: 5, length: 14}
+{kind: space, spelling: " ", line: 20, column: 1, length: 1}
+{kind: space, spelling: " ", line: 20, column: 2, length: 1}
+{kind: space, spelling: " ", line: 20, column: 3, length: 1}
+{kind: space, spelling: " ", line: 20, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 20, column: 5, length: 5}
+{kind: space, spelling: " ", line: 20, column: 10, length: 1}
+{kind: identifier, spelling: "Square", line: 20, column: 11, length: 6}
+{kind: space, spelling: " ", line: 20, column: 17, length: 1}
+{kind: identifier, spelling: "square", line: 20, column: 18, length: 6}
+{kind: ;, spelling: ";", line: 20, column: 24, length: 1}
+{kind: newline, spelling: "\n", line: 20, column: 25, length: 1}
+{kind: newline, spelling: "\n", line: 21, column: 1, length: 1}
+{kind: space, spelling: " ", line: 22, column: 1, length: 1}
+{kind: space, spelling: " ", line: 22, column: 2, length: 1}
+{kind: space, spelling: " ", line: 22, column: 3, length: 1}
+{kind: space, spelling: " ", line: 22, column: 4, length: 1}
+{kind: eol_comment, spelling: " The square's movement direction", line: 22, column: 5, length: 35}
+{kind: space, spelling: " ", line: 23, column: 1, length: 1}
+{kind: space, spelling: " ", line: 23, column: 2, length: 1}
+{kind: space, spelling: " ", line: 23, column: 3, length: 1}
+{kind: space, spelling: " ", line: 23, column: 4, length: 1}
+{kind: identifier, spelling: "field", line: 23, column: 5, length: 5}
+{kind: space, spelling: " ", line: 23, column: 10, length: 1}
+{kind: identifier, spelling: "int", line: 23, column: 11, length: 3}
+{kind: space, spelling: " ", line: 23, column: 14, length: 1}
+{kind: identifier, spelling: "direction", line: 23, column: 15, length: 9}
+{kind: ;, spelling: ";", line: 23, column: 24, length: 1}
+{kind: space, spelling: " ", line: 23, column: 25, length: 1}
+{kind: eol_comment, spelling: " 0=none,1=up,2=down,3=left,4=right", line: 23, column: 26, length: 37}
+{kind: newline, spelling: "\n", line: 24, column: 1, length: 1}
+{kind: space, spelling: " ", line: 25, column: 1, length: 1}
+{kind: space, spelling: " ", line: 25, column: 2, length: 1}
+{kind: space, spelling: " ", line: 25, column: 3, length: 1}
+{kind: space, spelling: " ", line: 25, column: 4, length: 1}
+{kind: eol_comment, spelling: " Constructs a new Square Game.", line: 25, column: 5, length: 33}
+{kind: space, spelling: " ", line: 26, column: 1, length: 1}
+{kind: space, spelling: " ", line: 26, column: 2, length: 1}
+{kind: space, spelling: " ", line: 26, column: 3, length: 1}
+{kind: space, spelling: " ", line: 26, column: 4, length: 1}
+{kind: identifier, spelling: "constructor", line: 26, column: 5, length: 11}
+{kind: space, spelling: " ", line: 26, column: 16, length: 1}
+{kind: identifier, spelling: "SquareGame", line: 26, column: 17, length: 10}
+{kind: space, spelling: " ", line: 26, column: 27, length: 1}
+{kind: identifier, spelling: "new", line: 26, column: 28, length: 3}
+{kind: (, spelling: "(", line: 26, column: 31, length: 1}
+{kind: ), spelling: ")", line: 26, column: 32, length: 1}
+{kind: space, spelling: " ", line: 26, column: 33, length: 1}
+{kind: {, spelling: "{", line: 26, column: 34, length: 1}
+{kind: newline, spelling: "\n", line: 26, column: 35, length: 1}
+{kind: space, spelling: " ", line: 27, column: 1, length: 1}
+{kind: space, spelling: " ", line: 27, column: 2, length: 1}
+{kind: space, spelling: " ", line: 27, column: 3, length: 1}
+{kind: space, spelling: " ", line: 27, column: 4, length: 1}
+{kind: space, spelling: " ", line: 27, column: 5, length: 1}
+{kind: space, spelling: " ", line: 27, column: 6, length: 1}
+{kind: space, spelling: " ", line: 27, column: 7, length: 1}
+{kind: space, spelling: " ", line: 27, column: 8, length: 1}
+{kind: identifier, spelling: "let", line: 27, column: 9, length: 3}
+{kind: space, spelling: " ", line: 27, column: 12, length: 1}
+{kind: identifier, spelling: "square", line: 27, column: 13, length: 6}
+{kind: space, spelling: " ", line: 27, column: 19, length: 1}
+Read 82 tokens

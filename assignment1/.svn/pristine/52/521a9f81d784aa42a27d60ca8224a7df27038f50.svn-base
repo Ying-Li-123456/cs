@@ -1,0 +1,318 @@
+Read 97 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 96
+    {kind: space, spelling: " ", line: 23, column: 14, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22:     constructor Square new(int Ax, int Ay, int Asize) {$
+  23:         let x 
+                   ^
+
+----------------
+token: 91
+    {kind: space, spelling: " ", line: 23, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22:     constructor Square new(int Ax, int Ay, int Asize) {$
+  23:        
+            ^
+
+----------------
+token: 86
+    {kind: space, spelling: " ", line: 23, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22:     constructor Square new(int Ax, int Ay, int Asize) {$
+  23:   
+       ^
+
+----------------
+token: 81
+    {kind: ), spelling: ")", line: 22, column: 53, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  21:     // Constructs a new square with a given location and size.$
+  22:     constructor Square new(int Ax, int Ay, int Asize)
+                                                          ^
+
+----------------
+token: 76
+    {kind: ,, spelling: ",", line: 22, column: 42, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  21:     // Constructs a new square with a given location and size.$
+  22:     constructor Square new(int Ax, int Ay,
+                                               ^
+
+----------------
+token: 71
+    {kind: ,, spelling: ",", line: 22, column: 34, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  21:     // Constructs a new square with a given location and size.$
+  22:     constructor Square new(int Ax,
+                                       ^
+
+----------------
+token: 66
+    {kind: identifier, spelling: "new", line: 22, column: 24, length: 3}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:     // Constructs a new square with a given location and size.$
+  22:     constructor Square new
+                             ^
+
+----------------
+token: 61
+    {kind: space, spelling: " ", line: 22, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21:     // Constructs a new square with a given location and size.$
+  22:     
+         ^
+
+----------------
+token: 56
+    {kind: space, spelling: " ", line: 21, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20: $
+  21:     
+         ^
+
+----------------
+token: 51
+    {kind: newline, spelling: "\n", line: 19, column: 20, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:     // The size of the square$
+  19:     field int size;$
+                         ^
+
+----------------
+token: 46
+    {kind: space, spelling: " ", line: 19, column: 10, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:     // The size of the square$
+  19:     field 
+               ^
+
+----------------
+token: 41
+    {kind: space, spelling: " ", line: 19, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:     // The size of the square$
+  19:  
+      ^
+
+----------------
+token: 36
+    {kind: space, spelling: " ", line: 18, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  17: $
+  18:  
+      ^
+
+----------------
+token: 31
+    {kind: space, spelling: " ", line: 16, column: 17, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:     // Location on the screen$
+  16:     field int x, 
+                      ^
+
+----------------
+token: 26
+    {kind: space, spelling: " ", line: 16, column: 10, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:     // Location on the screen$
+  16:     field 
+               ^
+
+----------------
+token: 21
+    {kind: space, spelling: " ", line: 16, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  15:     // Location on the screen$
+  16:  
+      ^
+
+----------------
+token: 16
+    {kind: space, spelling: " ", line: 15, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14: $
+  15:  
+      ^
+
+----------------
+token: 11
+    {kind: identifier, spelling: "Square", line: 13, column: 7, length: 6}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  12:  */$
+  13: class Square
+            ^
+
+----------------
+token: 6
+    {kind: newline, spelling: "\n", line: 7, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   6: // Expressionless version of Square.jack.$
+   7: $
+      ^
+
+----------------
+token: 1
+    {kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+   2: // and the book "The Elements of Computing Systems"$
+      ^
+
+----------------

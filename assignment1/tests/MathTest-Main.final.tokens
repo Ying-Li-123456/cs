@@ -1,0 +1,81 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1, length: 37}
+{kind: eol_comment, spelling: " File name: projects/12/MathTest/Main.jack", line: 4, column: 1, length: 45}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS Math class. ", line: 6, column: 1, length: 42}
+{kind: newline, spelling: "\n", line: 6, column: 43, length: 1}
+{kind: identifier, spelling: "class", line: 7, column: 1, length: 5}
+{kind: space, spelling: " ", line: 7, column: 6, length: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7, length: 4}
+{kind: space, spelling: " ", line: 7, column: 11, length: 1}
+{kind: {, spelling: "{", line: 7, column: 12, length: 1}
+{kind: newline, spelling: "\n", line: 7, column: 13, length: 1}
+{kind: newline, spelling: "\n", line: 8, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 2, length: 1}
+{kind: space, spelling: " ", line: 9, column: 3, length: 1}
+{kind: space, spelling: " ", line: 9, column: 4, length: 1}
+{kind: adhoc_comment, spelling: "* Performs several mathematical operations from the Math class. ", line: 9, column: 5, length: 68}
+{kind: newline, spelling: "\n", line: 9, column: 73, length: 1}
+{kind: space, spelling: " ", line: 10, column: 1, length: 1}
+{kind: space, spelling: " ", line: 10, column: 2, length: 1}
+{kind: space, spelling: " ", line: 10, column: 3, length: 1}
+{kind: space, spelling: " ", line: 10, column: 4, length: 1}
+{kind: identifier, spelling: "function", line: 10, column: 5, length: 8}
+{kind: space, spelling: " ", line: 10, column: 13, length: 1}
+{kind: identifier, spelling: "void", line: 10, column: 14, length: 4}
+{kind: space, spelling: " ", line: 10, column: 18, length: 1}
+{kind: identifier, spelling: "main", line: 10, column: 19, length: 4}
+{kind: (, spelling: "(", line: 10, column: 23, length: 1}
+{kind: ), spelling: ")", line: 10, column: 24, length: 1}
+{kind: space, spelling: " ", line: 10, column: 25, length: 1}
+{kind: {, spelling: "{", line: 10, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 10, column: 27, length: 1}
+{kind: space, spelling: " ", line: 11, column: 1, length: 1}
+{kind: space, spelling: " ", line: 11, column: 2, length: 1}
+{kind: space, spelling: " ", line: 11, column: 3, length: 1}
+{kind: space, spelling: " ", line: 11, column: 4, length: 1}
+{kind: space, spelling: " ", line: 11, column: 5, length: 1}
+{kind: space, spelling: " ", line: 11, column: 6, length: 1}
+{kind: space, spelling: " ", line: 11, column: 7, length: 1}
+{kind: space, spelling: " ", line: 11, column: 8, length: 1}
+{kind: identifier, spelling: "var", line: 11, column: 9, length: 3}
+{kind: space, spelling: " ", line: 11, column: 12, length: 1}
+{kind: identifier, spelling: "Array", line: 11, column: 13, length: 5}
+{kind: space, spelling: " ", line: 11, column: 18, length: 1}
+{kind: identifier, spelling: "r", line: 11, column: 19, length: 1}
+{kind: ;, spelling: ";", line: 11, column: 20, length: 1}
+{kind: space, spelling: " ", line: 11, column: 21, length: 1}
+{kind: space, spelling: " ", line: 11, column: 22, length: 1}
+{kind: space, spelling: " ", line: 11, column: 23, length: 1}
+{kind: space, spelling: " ", line: 11, column: 24, length: 1}
+{kind: space, spelling: " ", line: 11, column: 25, length: 1}
+{kind: space, spelling: " ", line: 11, column: 26, length: 1}
+{kind: space, spelling: " ", line: 11, column: 27, length: 1}
+{kind: space, spelling: " ", line: 11, column: 28, length: 1}
+{kind: space, spelling: " ", line: 11, column: 29, length: 1}
+{kind: space, spelling: " ", line: 11, column: 30, length: 1}
+{kind: eol_comment, spelling: " stores test results;", line: 11, column: 31, length: 24}
+{kind: space, spelling: " ", line: 12, column: 1, length: 1}
+{kind: space, spelling: " ", line: 12, column: 2, length: 1}
+{kind: space, spelling: " ", line: 12, column: 3, length: 1}
+{kind: space, spelling: " ", line: 12, column: 4, length: 1}
+{kind: space, spelling: " ", line: 12, column: 5, length: 1}
+{kind: space, spelling: " ", line: 12, column: 6, length: 1}
+{kind: space, spelling: " ", line: 12, column: 7, length: 1}
+{kind: space, spelling: " ", line: 12, column: 8, length: 1}
+{kind: newline, spelling: "\n", line: 12, column: 9, length: 1}
+{kind: space, spelling: " ", line: 13, column: 1, length: 1}
+{kind: space, spelling: " ", line: 13, column: 2, length: 1}
+{kind: space, spelling: " ", line: 13, column: 3, length: 1}
+{kind: space, spelling: " ", line: 13, column: 4, length: 1}
+{kind: space, spelling: " ", line: 13, column: 5, length: 1}
+{kind: space, spelling: " ", line: 13, column: 6, length: 1}
+{kind: space, spelling: " ", line: 13, column: 7, length: 1}
+{kind: space, spelling: " ", line: 13, column: 8, length: 1}
+{kind: identifier, spelling: "let", line: 13, column: 9, length: 3}
+{kind: space, spelling: " ", line: 13, column: 12, length: 1}
+{kind: identifier, spelling: "r", line: 13, column: 13, length: 1}
+{kind: space, spelling: " ", line: 13, column: 14, length: 1}
+Read 80 tokens

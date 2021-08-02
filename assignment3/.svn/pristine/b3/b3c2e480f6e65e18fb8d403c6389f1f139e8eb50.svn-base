@@ -1,0 +1,1150 @@
+#include <string>
+#include <vector>
+#include "iobuffer.h"
+#include "symbols.h"
+#include "abstract-syntax-tree.h"
+
+// to shorten our code:
+using namespace std ;
+using namespace CS_IO_Buffers ;
+using namespace CS_Symbol_Tables ;
+using namespace Jack_Compiler ;
+static symbols symbol_table = 0 ;
+// ***** WHAT TO DO *****
+//
+// MODIFY the skeleton code below to parse a Jack class and construct the equivalent abstract syntax tree, ast.
+//        The main function will print the ast formatted as XML
+//
+// NOTE: the correct segment and offset is recorded with every variable in the ast
+//       so the code generator does not need to use any symbol tables
+//
+// NOTE: use the fatal function below to print fatal error messages with the current
+//       input file position marked.
+//
+// The skeleton code has one function per non-terminal in the Jack grammar
+//  - comments describing how to create relevant ast nodes prefix most functions
+//  - ast nodes are immutable - you must create all the sub-trees before creating a new node
+//
+// The structure of the skeleton code is just a suggestion
+//  - it matches the grammar but does not quite match the ast structure
+//  - you will need to change the parameters / results / functions to suit your own logic
+//  - you can change it as much as you like
+//
+// NOTE: the best place to start is to write code to parse the input without attempting to create
+//       any ast nodes. If correct this parser will report errors when it finds syntax errors but
+//       correct programs will fail because the tree printer will not be provided with a valid ast.
+//       Once the parsing works modify your code to create the ast nodes.
+//
+// NOTE: the return -1 ; statements are only present so that this skeleton code will compile.
+//       these statements need to be replaced by code that creates ast nodes.
+//
+
+// fatal error handling
+static void fatal(string message)
+{
+    fatal_error(0,"***** Error:\n" + token_context() + message) ;
+}
+
+// The Jack grammar to be recognised:
+// program          ::= One or more classes, each class in a separate file named <class_name>'.Jack'
+// class            ::= 'class' identifier '{' class_var_decs subr_decs '}'
+// class_var_decs   ::= (static_var_dec | field_var_dec)*
+// static_var_dec   ::= 'static' type identifier (',' identifier)* ';'
+// field_var_dec    ::= 'field' type identifier (',' identifier)* ';'
+// type             ::= 'int' | 'char' | 'boolean' | identifier
+// vtype            ::= 'void' | type
+// subr_decs        ::= (constructor | function | method)*
+// constructor      ::= 'constructor' identifier identifier '(' param_list ')' subr_body
+// function         ::= 'function' vtype identifier '(' param_list ')' subr_body
+// method           ::= 'method' vtype identifier '(' param_list ')' subr_body
+// param_list       ::= ((type identifier) (',' type identifier)*)?
+// subr_body        ::= '{' var_decs statements '}'
+// var_decs         ::= var_dec*
+// var_dec          ::= 'var' type identifier (',' identifier)* ';'
+
+// statements       ::= statement*
+// statement        ::= let | if | while | do | return
+// let              ::= 'let' identifier index? '=' expr ';'
+// if               ::= 'if' '(' expr ')' '{' statements '}' ('else' '{' statements '}')?
+// while            ::= 'while' '(' expr ')' '{' statements '}'
+// do               ::= 'do' identifier (id_call | call) ';'
+// return           ::= 'return' expr? ';'
+
+// expr             ::= term (infix_op term)*
+// term             ::= integer_constant | string_constant | 'true' | 'false' | 'null' | 'this' | '(' expr ')' | unary_op term | var_term
+// var_term         ::= identifier (index | id_call | call)?
+// index            ::= '[' expr ']'
+// id_call          ::= '.' identifier call
+// call             ::= '(' expr_list ')'
+// expr_list        ::= (expr (',' expr)*)?
+// infix_op         ::= '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
+// unary_op         ::= '-' | '~'
+// var_term         ::= identifier ('[' expr ']' | '.' identifier '(' expr_list ')' | '(' expr_list ')')?
+
+
+// forward declarations of one function per non-terminal rule in the Jack grammar - except for program
+// NOTE: parse_type(), parse_vtype(), parse_unary_op() all return a Token not an ast
+// NOTE: parse_static_var_dec(), parse_field_var_dec(), parse_var_dec() all return vector<ast> not an ast
+ast parse_class() ;
+ast parse_class_var_decs() ;
+ast parse_static_var_dec() ;
+ast parse_field_var_dec() ;
+string parse_type() ;
+string parse_vtype() ;
+ast parse_subr_decs() ;
+ast parse_constructor() ;
+ast parse_function() ;
+ast parse_method() ;
+ast parse_param_list() ;
+ast parse_subr_body() ;
+ast parse_var_decs() ;
+ast parse_var_dec() ;
+
+ast parse_statements() ;
+ast parse_statement() ;
+ast parse_let() ;
+ast parse_if() ;
+ast parse_while() ;
+ast parse_do() ;
+ast parse_return() ;
+
+ast parse_expr() ;
+ast parse_term() ;
+ast parse_var_term() ;
+ast parse_index(string name,st_variable temp) ;
+ast parse_id_call(st_variable temp,string na) ;
+ast parse_call() ;
+
+ast parse_expr_list() ;
+ast parse_expr_list_more();
+ast parse_expr_list(ast node);
+string parse_infix_op() ;
+string parse_unary_op() ;
+ast parse_keyword_constant() ;
+ast parse_subr_call(st_variable node,string na) ;
+void clean_up() ;
+
+symbols symbols_class ;
+symbols symbols_subrs ;
+
+vector<ast> vars ;
+vector<ast> subroutines ;
+
+bool is_constructor ;
+bool is_method_call ;
+
+string class_name_privateUse ;
+string vtype_privateUse ;
+string ident_privateUse ;
+
+ast vec_argument[100] ;
+ast vec_local[100] ;
+
+int pointer_argument = 0 ;
+int pointer_local = 0 ;
+int seq ; // seq = 0 means function | constructor, seq =1 means method
+int seq_con ;
+int static_offset = 0 ;
+int this_offset = 0 ;
+
+// class ::= 'class' identifier '{' class_var_decs subr_decs '}'
+// create_class(myclassname,class_var_decs,class_subrs)
+ast parse_class()
+{
+    //the recursive bone structure of the ast tree
+    symbols_class = create_variables() ;
+    
+    mustbe(tk_class) ;
+    class_name_privateUse = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    mustbe(tk_lcb) ;
+    ast ast_class_var_decs = parse_class_var_decs() ;
+    ast ast_subr_decs = parse_subr_decs() ;
+    mustbe(tk_rcb) ;
+    
+    return create_class(class_name_privateUse,ast_class_var_decs,ast_subr_decs) ;
+}
+
+// class_var_decs ::= (static_var_dec | field_var_dec)*
+// returns ast_class_var_decs: create_class_var_decs(vector<ast> decs)
+// create_class_var_decs must be passed a vector of ast_var_dec
+ast parse_class_var_decs()
+{
+    //parse static_vars and field_vars
+    while(have(tk_class_var))
+    {
+        if (have(tk_static))
+        {
+            parse_static_var_dec() ;
+        }
+        
+        if (have(tk_field)){
+            parse_field_var_dec() ;
+        }
+    }
+    
+    return create_class_var_decs(vars) ;
+}
+
+// static_var_dec ::= 'static' type identifier (',' identifier)* ';'
+// returns vector of ast_var_dec
+ast parse_static_var_dec()
+{
+    //parse static variables
+    string var_type ;
+    string var_name ;
+    
+    mustbe(tk_static) ;
+    var_type = parse_type() ;
+    var_name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    vars.push_back (create_var_dec(var_name,"static",static_offset,var_type)) ;
+    st_variable myvar(var_name,var_type,"static",static_offset) ;
+    if ( !insert_variables(symbols_class,var_name,myvar) ) fatal("Error!") ;
+    
+    //static_offset is a static int
+    static_offset++ ;
+    
+    //for multiple statics
+    while (have(tk_comma))
+    {
+        mustbe(tk_comma) ;
+        var_name = token_spelling() ;
+        mustbe(tk_identifier) ;
+        
+        vars.push_back (create_var_dec(var_name,"static",static_offset,var_type)) ;
+        st_variable myvar1(var_name,var_type,"static",static_offset) ;
+        if ( !insert_variables(symbols_class,var_name,myvar1) ) fatal("Error!") ;
+        static_offset++ ;
+    }
+    
+    mustbe(tk_semi) ;
+    return -1 ;
+}
+
+// field_var_dec ::= 'field' type identifier (',' identifier)* ';'
+// returns vector of ast_var_dec
+ast parse_field_var_dec()
+{
+    //parse field variables
+    string var_type ;
+    string var_name ;
+    
+    mustbe(tk_field) ;
+    var_type = parse_type() ;
+    var_name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    vars.push_back (create_var_dec(var_name,"this",this_offset,var_type)) ;
+    st_variable myvar(var_name,var_type,"this",this_offset) ;
+    if ( !insert_variables(symbols_class,var_name,myvar) ) fatal("Error!") ;
+    this_offset++ ; //this_offset is a static int
+    
+    //for multiple fields
+    while (have(tk_comma))
+    {
+        mustbe(tk_comma) ;
+        var_name = token_spelling() ;
+        mustbe(tk_identifier) ;
+        
+        vars.push_back (create_var_dec(var_name,"this",this_offset,var_type)) ;
+        st_variable myvar1(var_name,var_type,"this",this_offset) ;
+        if ( !insert_variables(symbols_class,var_name,myvar1) ) fatal("Error!") ;
+        this_offset++ ;
+    }
+    
+    mustbe(tk_semi) ;
+    return -1 ;
+}
+
+// type ::= 'int' | 'char' | 'boolean' | identifier
+// returns the string for the type
+string parse_type()
+{
+    //parse type;
+    string type = token_spelling() ;
+    mustbe(tk_type) ;
+    
+    return type ;
+}
+
+// vtype ::= 'void' | type
+// returns the string for the type
+string parse_vtype()
+{
+    //parse vtype;
+    string vtype = token_spelling() ;
+    mustbe(tk_vtype) ;
+    
+    return vtype ;
+}
+
+// subr_decs ::= (constructor | function | method)*
+// returns ast_subr_decs: create_subr_decs(vector<ast> subrs)
+// create_subr_decs must be passed an vector of ast_subr
+ast parse_subr_decs()
+{
+    //for holding temp subr nodes
+    ast temp_node ;
+    
+    while (have(tk_subroutine))
+    {
+        switch(token_kind())
+        {
+            case tk_constructor:
+                temp_node = parse_constructor() ;
+                subroutines.push_back (create_subr(temp_node)) ;
+                break ;
+            case tk_function:
+                temp_node = parse_function() ;
+                subroutines.push_back (create_subr(temp_node)) ;
+                break ;
+            case tk_method:
+                temp_node = parse_method() ;
+                subroutines.push_back (create_subr(temp_node)) ;
+                break ;
+            default:
+                return -1 ;
+            
+        }
+    }
+    return create_subr_decs(subroutines) ;
+}
+
+// constructor ::= 'constructor' identifier identifier '(' param_list ')' subr_body
+// returns ast_constructor: create_constructor(string vtype,string name,ast params,ast body)
+ast parse_constructor()
+{
+    //parse constructor
+    //clean former subr's static vars firstly
+    clean_up() ;
+    seq = 1 ;
+    seq_con = 100 ;
+    is_constructor = true ;
+    symbols_subrs = create_variables() ;
+    
+    mustbe(tk_constructor) ;
+    
+    string vtype = parse_vtype() ;
+    vtype_privateUse = vtype ;
+    
+    string name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    mustbe(tk_lrb) ;
+    ast params = parse_param_list() ;
+    mustbe(tk_rrb) ;
+    
+    ast body = parse_subr_body() ;
+    return create_constructor(vtype,name,params,body) ;
+}
+
+// function ::= 'function' vtype identifier '(' param_list ')' subr_body
+// returns ast_function: create_function(string vtype,string name,ast params,ast body)
+ast parse_function()
+{
+    //parse function
+    clean_up() ;
+    seq = 0 ;
+    seq_con = 0 ;
+    symbols_subrs = create_variables() ;
+    
+    mustbe(tk_function) ;
+    
+    string vtype = parse_vtype() ;
+    vtype_privateUse = vtype ;
+    
+    string name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    mustbe(tk_lrb) ;
+    ast params = parse_param_list() ;
+    mustbe(tk_rrb) ;
+    
+    ast body = parse_subr_body() ;
+    return create_function(vtype,name,params,body) ;
+}
+
+// method ::= 'method' vtype identifier '(' param_list ')' subr_body
+// returns ast_method: create_method(string vtype,string name,ast params,ast body)
+ast parse_method()
+{
+    //parse method
+    clean_up() ;
+    seq = 1 ;
+    seq_con = 0 ;
+    symbols_subrs = create_variables() ;
+    
+    mustbe(tk_method) ;
+    
+    string vtype = parse_vtype() ;
+    vtype_privateUse = vtype ;
+    
+    string name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    mustbe(tk_lrb) ;
+    ast params = parse_param_list() ;
+    mustbe(tk_rrb) ;
+    
+    ast body = parse_subr_body() ;
+    return create_method(vtype,name,params,body) ;
+}
+
+// param_list ::= ((type identifier) (',' type identifier)*)?
+// returns ast_param_list: create_param_list(vector<ast> params)
+// create_param_list must be passed a vector of ast_var_dec
+ast parse_param_list()
+{
+    //parse parameters of a subroutine
+    //seq=0 stands for functions & constructors
+    //seq = 1 stands for methods
+    vector<ast> params ;
+    string name ;
+    string type ;
+    int arg_offset = 0 ;
+    int i = 0 ;
+    
+    if(seq == 1 && seq_con == 0)
+    {
+        arg_offset++ ;
+    }
+    if (have(tk_type))
+    {
+        type = parse_type() ;
+        name = token_spelling() ;
+        mustbe(tk_identifier) ;
+        
+        params.push_back (create_var_dec(name,"argument",arg_offset,type)) ;
+        st_variable myvar(name,type,"argument",arg_offset) ;
+        if ( !insert_variables(symbols_subrs,name,myvar) ) fatal("Error!") ;
+        arg_offset++ ;
+        
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma) ;
+            
+            type = parse_type() ;
+            name = token_spelling() ;
+            mustbe(tk_identifier) ;
+            
+            params.push_back (create_var_dec(name,"argument",arg_offset,type)) ;
+            st_variable myvar1(name,type,"argument",arg_offset) ;
+            if ( !insert_variables(symbols_subrs,name,myvar1) ) fatal("Error!") ;
+            arg_offset++ ;
+        }
+    }
+    
+    //transfer params into static ast array, for using symbol table function
+    while(i<params.size())
+    {
+        vec_argument[i] = params[i] ;
+        i++ ;
+    }
+    pointer_argument = params.size() ;
+    
+    return create_param_list(params) ;
+}
+
+// subr_body ::= '{' var_decs statements '}'
+// create_subr_body(ast decs,ast body)
+ast parse_subr_body()
+{
+    //parse body of subroutine
+    mustbe(tk_lcb) ;
+    
+    ast decs = parse_var_decs() ;
+    ast body = parse_statements() ;
+    
+    mustbe(tk_rcb) ;
+    return create_subr_body(decs,body) ;
+}
+
+// var_decs ::= var_dec*
+// returns ast_var_decs: create_var_decs(vector<ast> decs)
+ast parse_var_decs()
+{
+    int i = 0;
+    
+    //parse var_decs of subroutine
+    vector<ast> decs ;
+    while(have(tk_var))
+    {
+        parse_var_dec() ;
+    }
+    
+    while(i<pointer_local)
+    {
+        decs.push_back(vec_local[i]) ;
+        i++ ;
+    }
+    
+    return create_var_decs(decs) ;
+}
+
+// var_dec ::= 'var' type identifier (',' identifier)* ';'
+// returns vector of ast_var_dec
+ast parse_var_dec()
+{
+    //parse a single var type
+    string name ;
+    string type ;
+    
+    mustbe(tk_var) ;
+    type = parse_type() ;
+    name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    vec_local[pointer_local] = create_var_dec(name,"local",pointer_local,type) ;
+    st_variable myvar(name,type,"local",pointer_local) ;
+    if ( !insert_variables(symbols_subrs,name,myvar) ) fatal("Error!") ;
+    pointer_local++ ;
+    
+    while (have(tk_comma) || have(tk_identifier))
+    {
+        if(have(tk_comma))
+        {
+            mustbe(tk_comma) ;
+        }
+        name = token_spelling() ;
+        mustbe(tk_identifier) ;
+        
+        vec_local[pointer_local] = create_var_dec(name,"local",pointer_local,type) ;
+        st_variable myvar1(name,type,"local",pointer_local) ;
+        if ( !insert_variables(symbols_subrs,name,myvar1) ) fatal("Error!") ;
+        pointer_local++ ;
+        continue ;
+    }
+    
+    mustbe(tk_semi) ;
+    
+    return -1 ;
+}
+
+// statements ::= statement*
+// create_statements(vector<ast> statements)
+ast parse_statements()
+{
+    //parse all statements
+    //seq = 0 stands for functions & constructors
+    //seq = 1 stands for methods
+    vector<ast> statements ;
+    while (have(tk_statement))
+    {
+        statements.push_back (parse_statement()) ;
+    }
+    return create_statements(statements) ;
+}
+
+// statement ::= let | if | while | do | return
+// create_statement(ast statement)
+ast parse_statement()
+{
+    //parse a single statement
+    //seq=0 stands for functions & constructors
+    //seq = 1 stands for methods
+    ast statement ;
+    switch(token_kind())
+    {
+        case tk_let:
+            statement = parse_let() ;
+            break ;
+        case tk_if:
+            statement = parse_if() ;
+            break ;
+        case tk_while:
+            statement = parse_while() ;
+            break ;
+        case tk_do:
+            statement = parse_do() ;
+            break ;
+        case tk_return:
+            statement = parse_return() ;
+            break ;
+        default:
+            mustbe(tk_statement) ;
+            return -1 ;
+        
+    }
+    return create_statement(statement) ;
+}
+
+// let ::= 'let' identifier index? '=' expr ';'
+// return one of: ast_let or ast_let_array
+ast parse_let()
+{
+    //parse let statement
+    //seq=0 stands for functions & constructors
+    //seq = 1 stands for methods
+    ast var ;
+    ast expr ;
+    ast index ;
+    string var_name ;
+    string var_segment ;
+    int var_offset ;
+    string var_type ;
+    
+    mustbe(tk_let) ;
+    var_name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    st_variable temp = lookup_variables(symbols_subrs,var_name) ;
+    
+    if(temp.offset == -1)
+    {
+        temp = lookup_variables(symbols_class,var_name) ;
+        if(temp.offset == -1)
+        {
+            fatal("undeclared variable") ;
+        }
+    }
+    
+    if (seq == 0 && temp.segment == "this")
+    {
+        fatal("use a this variable in function or constructor") ;
+    }
+    var_segment = temp.segment ;
+    var_type = temp.type ;
+    var_offset = temp.offset ;
+    var = create_var(var_name,var_segment,var_offset,var_type) ;
+    
+    //'['expr']'
+    if (have(tk_lsb))
+    {
+        mustbe(tk_lsb) ;
+        index = parse_expr() ;
+        mustbe(tk_rsb) ;
+        
+        mustbe(tk_eq) ;
+        expr = parse_expr() ;
+        mustbe(tk_semi) ;
+        
+        return create_let_array(var,index,expr) ;
+    }
+    
+    mustbe(tk_eq) ;
+    expr = parse_expr() ;
+    mustbe(tk_semi) ;
+    
+    return create_let(var,expr) ;
+}
+
+// if ::= 'if' '(' expr ')' '{' statements '}' ('else' '{' statements '}')?
+// return one of: ast_if or ast_if_else
+ast parse_if()
+{
+    //parse if statement
+    ast condition ;
+    ast if_true ;
+    ast if_false ;
+    
+    mustbe(tk_if) ;
+    mustbe(tk_lrb) ;
+    condition = parse_expr() ;
+    mustbe(tk_rrb) ;
+    
+    mustbe(tk_lcb) ;
+    if_true = parse_statements() ;
+    mustbe(tk_rcb) ;
+    
+    //parse if else statement
+    if (have(tk_else))
+    {
+        mustbe(tk_else) ;
+        mustbe(tk_lcb) ;
+        if_false = parse_statements() ;
+        mustbe(tk_rcb) ;
+        
+        return create_if_else(condition,if_true,if_false) ;
+    }
+    return create_if(condition,if_true) ;
+}
+
+// while ::= 'while' '(' expr ')' '{' statements '}'
+// returns ast_while: create_while(ast condition,ast body)
+ast parse_while()
+{
+    //parse while statement
+    ast condition ;
+    ast body ;
+    
+    mustbe(tk_while) ;
+    mustbe(tk_lrb) ;
+    condition = parse_expr() ;
+    mustbe(tk_rrb) ;
+    
+    mustbe(tk_lcb) ;
+    body = parse_statements() ;
+    mustbe(tk_rcb) ;
+    
+    return create_while(condition,body) ;
+}
+
+// do ::= 'do' identifier (call | id_call) ';'
+// returns ast_do: create_do(ast call)
+ast parse_do()
+{
+    //parse do statement
+    ast call ;
+    bool method_call ;
+    string class_name ;
+    string subr_name ;
+    ast expr_list ;
+    
+    mustbe(tk_do) ;
+    class_name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    st_variable temp = lookup_variables(symbols_subrs,class_name) ;
+    if(temp.offset == -1)
+    {
+        temp = lookup_variables(symbols_class,class_name) ;
+    }
+    
+    //handle method call or function call
+    if (have(tk_stop))
+    {
+        ast temp_node = parse_id_call(temp,class_name) ;
+        mustbe(tk_semi);
+        return create_do(temp_node) ;
+    }
+    else
+    {
+        is_method_call = true ;
+        method_call = true ;
+        subr_name = class_name ;
+        class_name = class_name_privateUse ;
+    }
+    
+    mustbe(tk_lrb) ;
+    expr_list = parse_expr_list_more() ;
+    mustbe(tk_rrb) ;
+    mustbe(tk_semi) ;
+    
+    call = create_call_as_method(class_name,create_this(),create_subr_call(subr_name,expr_list)) ;
+    is_method_call = false ;
+    return create_do(call) ;
+}
+
+// return ::= 'return' expr? ';'
+// create_return()
+// create_return_expr(ast expr)
+ast parse_return()
+{
+    //parse return statement
+    vector<ast> expr_list ;
+    ast expr ;
+    mustbe(tk_return) ;
+    
+    if(is_constructor)
+    {
+        mustbe(tk_this) ;
+        expr_list.push_back (create_term(create_this())) ;
+        expr = create_expr(expr_list) ;
+        
+        mustbe(tk_semi) ;
+        
+        return create_return_expr(expr) ;
+    }
+    else
+    {
+        // a function or a method
+        if(vtype_privateUse == "void")
+        {
+            mustbe(tk_semi) ;
+            
+            return create_return() ;
+        }
+        else
+        {
+            expr = parse_expr() ;
+            mustbe(tk_semi) ;
+            
+            return create_return_expr(expr) ;
+        }
+    }
+}
+
+// expr ::= term (infix_op term)*
+// create_expr(vector<ast> expr)
+ast parse_expr()
+{
+    //parse expression
+    vector<ast> expr ;
+    expr.push_back (parse_term()) ;
+    
+    while (have(tk_infix_op))
+    {
+        expr.push_back (create_infix_op(parse_infix_op())) ;
+        expr.push_back (parse_term()) ;
+    }
+    
+    return create_expr(expr) ;
+}
+
+// term ::= integer_constant | string_constant | 'true' | 'false' | 'null' | 'this' | '(' expr ')' | unary_op term | var_term
+// create_term(ast term)
+// create_int(int _constant)
+// create_string(string _constant)
+// create_bool(bool t_or_f)
+// create_null()
+// create_this()
+// create_unary_op(string op,ast term)
+ast parse_term()
+{
+    //parse a term (may contains an expression)
+    ast term ;
+    
+    if (have(tk_integerConstant))
+    {
+        term = create_int (token_ivalue()) ;
+        mustbe(tk_integerConstant) ;
+        return create_term(term) ;
+    }
+    
+    if (have(tk_stringConstant))
+    {
+        term = create_string (token_spelling()) ;
+        mustbe(tk_stringConstant) ;
+        return create_term(term) ;
+    }
+    
+    if (have(tk_true) || have(tk_false))
+    {
+        string temp = token_spelling() ;
+        
+        if(temp == "true"){
+            term = create_bool (true) ;
+            mustbe(tk_true) ;
+            return create_term (term) ;
+        }
+        
+        if(temp == "false"){
+            term = create_bool (false) ;
+            mustbe(tk_false) ;
+            return create_term (term) ;
+        }
+    }
+    
+    if (have(tk_null))
+    {
+        term = create_null () ;
+        mustbe(tk_null) ;
+        return create_term(term) ;
+    }
+    
+    if (have(tk_this))
+    {
+        term = create_this () ;
+        mustbe(tk_this) ;
+        return create_term(term) ;
+    }
+    
+    if (have(tk_lrb))
+    {
+        mustbe(tk_lrb) ;
+        ast expr = parse_expr() ;
+        mustbe(tk_rrb) ;
+        return create_term(expr) ;
+    }
+    
+    if (have(tk_unary_op))
+    {
+        string unary_op = parse_unary_op() ;
+        term = create_unary_op(unary_op,parse_term()) ;
+        return create_term(term) ;
+    }
+    
+    //var_term must start with an identifier
+    if (have(tk_identifier))
+    {
+        term = parse_var_term() ;
+        return create_term(term) ;
+    }
+    
+    //mustbe a term if can not match one of above
+    mustbe(tk_term) ;
+    return -1 ;
+}
+
+// var_term ::= identifier (index | id_call | call)?
+// returns one of: ast_var, ast_array_index, ast_call_as_function or ast_call_as_method
+ast parse_var_term()
+{
+    //parse variable term
+    string name ;
+    string segment ;
+    int offset ;
+    string type ;
+    ast var ;
+    ast index ;
+    string class_name ;
+    
+    name = token_spelling() ;
+    ident_privateUse = name ;
+    mustbe(tk_identifier) ;
+    
+    st_variable temp = lookup_variables(symbols_subrs,name) ;
+    
+    if(temp.offset == -1)
+    {
+        temp = lookup_variables(symbols_class,name) ;
+    }
+    segment = temp.segment ;
+    type = temp.type ;
+    offset = temp.offset ;
+    
+    //cope subr_call firstly
+    if (have(tk_stop) || have(tk_lrb))
+    {
+        if(have(tk_stop))
+        {
+            is_method_call = true ;
+            class_name = class_name_privateUse ;
+            return parse_id_call(temp,name) ;
+        }
+        else
+        {
+            return parse_call() ;
+        }
+    }
+    // identifier | identifier[expr]
+    // cope an undeclared var and function/construcotor trying to access field
+    if(offset == -1)
+    {
+        fatal("undeclared variable in expr") ;
+    }
+    
+    if(seq == 0)
+    {
+        if(temp.segment == "this") fatal("use a this variable in function or constructor") ;
+    }
+    
+    if (have(tk_lsb))
+    {
+        return parse_index(name,temp) ;
+    }
+    
+    //must be an identifier
+    return create_var(name,segment,offset,type) ;
+}
+
+// index ::= '[' expr ']'
+// returns ast_expr
+ast parse_index(string name,st_variable temp)
+{
+    ast var;
+    if (have(tk_lsb))
+    {
+        mustbe(tk_lsb) ;
+        ast index = parse_expr() ;
+        mustbe(tk_rsb) ;
+        var = create_var(name,temp.segment,temp.offset,temp.type) ;
+        
+        return create_array_index(var,index) ;
+    }
+    return -1 ;
+}
+
+// id_call ::= '.' identifier call
+// returns ast_subr_call: create_subr_call(string subr_name,ast expr_list)
+ast parse_id_call(st_variable node,string na)
+{
+    mustbe(tk_stop) ;
+    string name = token_spelling() ;
+    mustbe(tk_identifier) ;
+    
+    //not found for var in var.var()
+    if(node.offset == -1)
+    {
+        if(na == class_name_privateUse)
+        {
+            mustbe(tk_lrb) ;
+            ast expr_list = parse_expr_list_more() ;
+            mustbe(tk_rrb) ;
+            
+            return create_call_as_function(na,create_subr_call(name,expr_list)) ;
+        }
+        else
+        {
+            mustbe(tk_lrb) ;
+            ast expr_list = parse_expr_list_more() ;
+            mustbe(tk_rrb) ;
+            
+            return create_call_as_function(na,create_subr_call(name,expr_list)) ;
+        }
+    }
+    else
+    {
+        //found var in var.var()
+        ast temp = create_var(node.name,node.segment,node.offset,node.type) ;
+        mustbe(tk_lrb) ;
+        ast expr_list = parse_expr_list_more() ;
+        mustbe(tk_rrb) ;
+        
+        return create_call_as_method(node.type,temp,create_subr_call(name,expr_list)) ;
+    }
+}
+
+// call ::= '(' expr_list ')'
+// returns ast_expr_list
+ast parse_call()
+{
+    string class_name ;
+    string subr_name ;
+    ast expr_list ;
+    ast var ;
+    
+    if (have(tk_lrb))
+    {
+        class_name = class_name_privateUse ;
+        subr_name = ident_privateUse ;
+        
+        mustbe(tk_lrb) ;
+        //empty?
+        expr_list = parse_expr_list_more() ;
+        mustbe(tk_rrb) ;
+        
+        ident_privateUse = "" ;
+        return create_call_as_method(class_name,create_this(),create_subr_call(subr_name,expr_list)) ;
+    }
+    return -1 ;
+}
+
+
+// expr_list ::= (expr (',' expr)*)?
+// returns ast_expr_list: create_expr_list(vector<ast> exprs)
+ast parse_expr_list()
+{
+    //parse expresion list, could be empty so check if is empty first
+    vector<ast> exprs ;
+    vector<ast> expr_list ;
+    
+    //for a method call, create ast_this firstly
+    if(is_method_call == true)
+    {
+        expr_list.push_back(create_term(create_this())) ;
+        exprs.push_back(create_expr(expr_list)) ;
+    }
+    
+    //if is empty(no expression inside)
+    if (have(tk_rrb))
+    {
+        return create_expr_list(exprs) ;
+    }
+    else
+    {
+        //not empty
+        exprs.push_back(parse_expr()) ;
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma) ;
+            exprs.push_back(parse_expr()) ;
+        }
+        
+        return create_expr_list(exprs) ;
+    }
+}
+
+ast parse_expr_list_more()
+{
+    //parse expresion list, could be empty so check if is empty first
+    vector<ast> exprs ;
+    vector<ast> expr_list ;
+    
+    if (have(tk_rrb))
+    {
+        return create_expr_list(exprs);
+    }
+    else
+    {
+        //not empty
+        exprs.push_back(parse_expr()) ;
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma) ;
+            exprs.push_back(parse_expr()) ;
+        }
+        
+        return create_expr_list(exprs) ;
+    }
+}
+
+//variable subroutine call ::= static_var (expr (',' expr)*)?
+ast parse_expr_list(ast node){
+    vector<ast> exprs ;
+    vector<ast> expr_list ;
+    
+    expr_list.push_back(create_term(node)) ;
+    exprs.push_back(create_expr(expr_list)) ;
+    
+    //if is empty(no expression inside)
+    if (have(tk_rrb))
+    {
+        return create_expr_list(exprs);
+    }
+    else
+    {
+        //not empty
+        exprs.push_back(parse_expr()) ;
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma) ;
+            exprs.push_back(parse_expr()) ;
+        }
+        
+        return create_expr_list(exprs) ;
+    }
+}
+
+// infix_op ::= '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
+string parse_infix_op()
+{
+    //parse infix operation
+    string infix_op = token_spelling() ;
+    mustbe(tk_infix_op) ;
+    
+    return infix_op ;
+}
+
+// unary_op ::= '-' | '~'
+string parse_unary_op()
+{
+    //parse unary opration;
+    string unary_op = token_spelling() ;
+    mustbe(tk_unary_op) ;
+    
+    return unary_op ;
+}
+
+//clean up before ending a subroutine
+void clean_up(){
+    is_constructor = false ;
+    is_method_call = false ;
+    vtype_privateUse ="" ;
+    pointer_local = 0 ;
+    pointer_argument = 0 ;
+}
+
+ast jack_parser()
+{
+    // read the first token to get the tokeniser initialised
+    next_token() ;
+    
+    // construct tree and return as result
+    return parse_class() ;
+}
+
+// main program
+int main(int argc,char **argv)
+{
+    config_errors(iob_buffer) ;
+    // parse a Jack class and print the abstract syntax tree as XML
+    ast_print_as_xml(jack_parser(),4) ;
+    
+    // flush the output and any errors
+    print_output() ;
+    print_errors() ;
+}

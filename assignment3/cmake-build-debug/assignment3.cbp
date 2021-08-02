@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="assignment3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/liying/cs-projects/assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/liying/cs-projects/assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/liying/cs-projects/assignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment3">
+				<Option output="/Users/liying/cs-projects/assignment3/cmake-build-debug/assignment3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liying/cs-projects/assignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liying/cs-projects/assignment3/."/>
+					<Add directory="/Users/liying/cs-projects/assignment3/bin"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/includes"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/lib"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/tests"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment3/fast">
+				<Option output="/Users/liying/cs-projects/assignment3/cmake-build-debug/assignment3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liying/cs-projects/assignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liying/cs-projects/assignment3/."/>
+					<Add directory="/Users/liying/cs-projects/assignment3/bin"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/includes"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/lib"/>
+					<Add directory="/Users/liying/cs-projects/assignment3/tests"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/liying/cs-projects/assignment3/Makefile">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/Makefile-extras">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/codegen">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/diff-colours">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/diffc">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/optimiser-e">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/optimiser-r">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/parser">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/pretty">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/run-tests">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/bin/tokens">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/codegen">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/codegen.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/includes/abstract-syntax-tree.h">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/includes/iobuffer.h">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/includes/symbols.h">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/includes/tokeniser.h">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/codegen">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/diff-colours">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/optimiser-e">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/optimiser-r">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/parser">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/pretty">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/bin/tokens">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/cats/lib.a">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/codegen">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/diff-colours">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/optimiser-e">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/optimiser-r">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/parser">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/pretty">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/bin/tokens">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/lib/macos/lib.a">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/optimiser-e">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/optimiser-e.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/optimiser-r">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/optimiser-r.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/parser">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/parser.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/pretty">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/pretty.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/01/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/01/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/01/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/01/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/02/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/02/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/02/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/02/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/02/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/03/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/03/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/03/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/03/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/04/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/04/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/04/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/04/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/04/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/05/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/05/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/05/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/05/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/05/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/06/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/06/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/06/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/06/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/06/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/07/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/07/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/07/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/07/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/08/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/08/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/08/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/08/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/09/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/09/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/09/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/09/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/10/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/10/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/10/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/10/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/10/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/11/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/11/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/11/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/11/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/11/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/12/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/12/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/13/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/13/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/14/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/14/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/15/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/15/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/16/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/16/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/16/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/16/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/16/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/17/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/17/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/17/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/17/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/17/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/18/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/18/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/18/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/18/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/18/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/19/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/19/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/19/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/19/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/19/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/20/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ArrayTst/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ArrayTst/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ArrayTst/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ArrayTst/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Average/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Average/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Average/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Average/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ComplexA/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ComplexA/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ComplexA/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ComplexA/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack.parser.opt-r.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ConvertB/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Square.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Square.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Square.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/Square.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/SquareGame.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/SquareGame.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/SquareGame.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/ElSquare/SquareGame.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Minint/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Minint/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Minint/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Minint/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Minint/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Ball.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Ball.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Ball.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Ball.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Ball.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Bat.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Bat.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Bat.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Bat.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/PongGame.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/PongGame.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/PongGame.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/PongGame.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Pong/PongGame.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Seven/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Seven/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Seven/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Seven/Main.jack.parser.opt-e.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Seven/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Main.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Main.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Main.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Main.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Square.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Square.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Square.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/Square.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/SquareGame.jack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/SquareGame.jack.parser.Pxml">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/SquareGame.jack.parser.codegen.Cvm">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/tests/Square/SquareGame.jack.parser.pretty.Pjack">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

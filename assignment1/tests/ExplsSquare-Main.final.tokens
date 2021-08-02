@@ -1,0 +1,64 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1, length: 37}
+{kind: eol_comment, spelling: " File name: projects/10/ExpressionlessSquare/Main.jack", line: 4, column: 1, length: 57}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: eol_comment, spelling: " Expressionless version of Main.jack.", line: 6, column: 1, length: 40}
+{kind: newline, spelling: "\n", line: 7, column: 1, length: 1}
+{kind: adhoc_comment, spelling: "*\n * The Main class initializes a new Square Dance game and starts it.\n ", line: 8, column: 1, length: 76}
+{kind: newline, spelling: "\n", line: 10, column: 4, length: 1}
+{kind: identifier, spelling: "class", line: 11, column: 1, length: 5}
+{kind: space, spelling: " ", line: 11, column: 6, length: 1}
+{kind: identifier, spelling: "Main", line: 11, column: 7, length: 4}
+{kind: space, spelling: " ", line: 11, column: 11, length: 1}
+{kind: {, spelling: "{", line: 11, column: 12, length: 1}
+{kind: newline, spelling: "\n", line: 11, column: 13, length: 1}
+{kind: newline, spelling: "\n", line: 12, column: 1, length: 1}
+{kind: space, spelling: " ", line: 13, column: 1, length: 1}
+{kind: space, spelling: " ", line: 13, column: 2, length: 1}
+{kind: space, spelling: " ", line: 13, column: 3, length: 1}
+{kind: space, spelling: " ", line: 13, column: 4, length: 1}
+{kind: eol_comment, spelling: " Initializes the square game and starts it.", line: 13, column: 5, length: 46}
+{kind: space, spelling: " ", line: 14, column: 1, length: 1}
+{kind: space, spelling: " ", line: 14, column: 2, length: 1}
+{kind: space, spelling: " ", line: 14, column: 3, length: 1}
+{kind: space, spelling: " ", line: 14, column: 4, length: 1}
+{kind: identifier, spelling: "function", line: 14, column: 5, length: 8}
+{kind: space, spelling: " ", line: 14, column: 13, length: 1}
+{kind: identifier, spelling: "void", line: 14, column: 14, length: 4}
+{kind: space, spelling: " ", line: 14, column: 18, length: 1}
+{kind: identifier, spelling: "main", line: 14, column: 19, length: 4}
+{kind: (, spelling: "(", line: 14, column: 23, length: 1}
+{kind: ), spelling: ")", line: 14, column: 24, length: 1}
+{kind: space, spelling: " ", line: 14, column: 25, length: 1}
+{kind: {, spelling: "{", line: 14, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 14, column: 27, length: 1}
+{kind: space, spelling: " ", line: 15, column: 1, length: 1}
+{kind: space, spelling: " ", line: 15, column: 2, length: 1}
+{kind: space, spelling: " ", line: 15, column: 3, length: 1}
+{kind: space, spelling: " ", line: 15, column: 4, length: 1}
+{kind: space, spelling: " ", line: 15, column: 5, length: 1}
+{kind: space, spelling: " ", line: 15, column: 6, length: 1}
+{kind: space, spelling: " ", line: 15, column: 7, length: 1}
+{kind: space, spelling: " ", line: 15, column: 8, length: 1}
+{kind: identifier, spelling: "var", line: 15, column: 9, length: 3}
+{kind: space, spelling: " ", line: 15, column: 12, length: 1}
+{kind: identifier, spelling: "SquareGame", line: 15, column: 13, length: 10}
+{kind: space, spelling: " ", line: 15, column: 23, length: 1}
+{kind: identifier, spelling: "game", line: 15, column: 24, length: 4}
+{kind: ;, spelling: ";", line: 15, column: 28, length: 1}
+{kind: newline, spelling: "\n", line: 15, column: 29, length: 1}
+{kind: newline, spelling: "\n", line: 16, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 2, length: 1}
+{kind: space, spelling: " ", line: 17, column: 3, length: 1}
+{kind: space, spelling: " ", line: 17, column: 4, length: 1}
+{kind: space, spelling: " ", line: 17, column: 5, length: 1}
+{kind: space, spelling: " ", line: 17, column: 6, length: 1}
+{kind: space, spelling: " ", line: 17, column: 7, length: 1}
+{kind: space, spelling: " ", line: 17, column: 8, length: 1}
+{kind: identifier, spelling: "let", line: 17, column: 9, length: 3}
+{kind: space, spelling: " ", line: 17, column: 12, length: 1}
+{kind: identifier, spelling: "game", line: 17, column: 13, length: 4}
+{kind: space, spelling: " ", line: 17, column: 17, length: 1}
+Read 63 tokens

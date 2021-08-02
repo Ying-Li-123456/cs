@@ -1,0 +1,121 @@
+// a skeleton implementation of a tokeniser
+
+#include "tokeniser.h"
+#include <ctype.h>
+
+// to shorten the code
+using namespace std ;
+
+/////////////////////////////////////////////////////////////////////////
+
+namespace Assignment_Tokeniser
+{
+
+    // the current input character, initiliased to '\n'
+    // the eof marker can be confused with a legal character but not one accepted by our tokeniser
+    static char ch = '\n' ;
+
+    // the number of characters return by nextch() so far
+    static int ch_count = 0 ;
+
+    // the current line number and column, initialised to line 0 column 0
+    // first call of nextch() will increment the line number to 1
+    static int line_num = 0 ;
+    static int column_num = 0 ;
+
+    // the line number, column number and ch_count for the first character in the current token
+    static int start_line = 0 ;
+    static int start_column = 0 ;
+    static int start_ch_count = 0 ;
+
+    // generate a context string for the given token
+    // all lines are shown after the preprocssing of special characters
+    // it shows the line before the token, with a '$' marking the end of line,
+    // the line containing the token up to the end of the token, and
+    // a line of spaces ending with a ^ under the token's first character to mark its position
+    // the lines are prefixed by line numbers, right justified in four spaces, followed by ": ", eg "  45: "
+    // NOTE: if a token includes newline character(s), only display the token before the first newline followed by a '$'
+    // NOTE: this function is not required for the milestone submission
+    string token_context(Token token)
+    {
+        return "" ;
+    }
+
+    // read next character if not at the end of input
+    // and update the line and column numbers
+    static void nextch()
+    {
+        if ( ch == EOF ) return ;
+
+        if ( ch == '\n' )                   // if last ch was newline ...
+        {
+            line_num++ ;                    // increment line number
+            column_num = 0 ;                // reset column number
+        }
+
+        ch = read_char() ;                  // read the next character, probably from stdin but this could change during testing
+        column_num++ ;                      // increment the column number
+
+                                            // additional code will be required here to handle preprocessing of '\t' and '\r'
+                                            // ...
+
+
+                                            // for the final submissions you need to buld a line by line copy of the input for use by token_context()
+                                            // add the new ch character to the line by line copy here
+                                            // ...
+
+
+        ch_count++ ;                        // one more character read by nextch() ;
+    }
+
+    // initialise the tokeniser
+    static void initialise()
+    {
+                                            // add any other initialisation code you need here
+                                            // ...
+
+        nextch() ;                          // make first call to nextch to initialise ch
+    }
+
+    ////////////////////////////////////////////////////////////////////////
+
+    // NOTE: when creating a new token the length can be calculated as ch_count - start_ch_count
+    //       eg new_token(tk_identifier,spelling,start_line,start_column,ch_count - start_ch_count) ;
+    //       the eoi token must be given length 0
+
+    // called when we find end of input or an error
+    static Token parse_eoi()
+    {
+        // simulate end of input in case this is handling a bad token rather than a real end of input
+        ch = EOF ;
+
+        // return an eoi token
+        return new_token(tk_eoi,"",start_line,start_column,0) ;
+    }
+
+    // return the next Token object by reading more of the input
+    // you must read input using the nextch() function
+    // the last character read is in the static variable ch
+    // always read one character past the end of the token being returned
+    Token next_token()
+    {
+        // if this is the first call of next_token() call initialise()
+        if ( line_num == 0 ) initialise() ;
+
+        // remember start of next token
+        start_line = line_num ;
+        start_column = column_num ;
+        start_ch_count = ch_count ;
+
+        switch(ch)      // ch is always the next char to read
+        {
+                        // add additional case labels here for characters that can start tokens
+                        // call a parse_*() function to complete and return each kind of token
+                        // this should follow the style used in the workshops
+                        // but remember that the token grammar is different in this assignment
+
+                        // if EOF or anything unexpected - return eoi
+        default:        return parse_eoi() ;
+        }
+    }
+}

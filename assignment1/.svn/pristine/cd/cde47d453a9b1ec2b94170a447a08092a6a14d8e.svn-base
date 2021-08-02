@@ -1,0 +1,273 @@
+Read 82 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 81
+    {kind: space, spelling: " ", line: 27, column: 19, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     constructor SquareGame new() {$
+  27:         let square 
+                        ^
+
+----------------
+token: 76
+    {kind: space, spelling: " ", line: 27, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     constructor SquareGame new() {$
+  27:        
+            ^
+
+----------------
+token: 71
+    {kind: space, spelling: " ", line: 27, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     constructor SquareGame new() {$
+  27:   
+       ^
+
+----------------
+token: 66
+    {kind: ), spelling: ")", line: 26, column: 32, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  25:     // Constructs a new Square Game.$
+  26:     constructor SquareGame new()
+                                     ^
+
+----------------
+token: 61
+    {kind: space, spelling: " ", line: 26, column: 16, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:     // Constructs a new Square Game.$
+  26:     constructor 
+                     ^
+
+----------------
+token: 56
+    {kind: space, spelling: " ", line: 26, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25:     // Constructs a new Square Game.$
+  26:  
+      ^
+
+----------------
+token: 51
+    {kind: space, spelling: " ", line: 25, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  24: $
+  25:  
+      ^
+
+----------------
+token: 46
+    {kind: identifier, spelling: "direction", line: 23, column: 15, length: 9}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22:     // The square's movement direction$
+  23:     field int direction
+                    ^
+
+----------------
+token: 41
+    {kind: space, spelling: " ", line: 23, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22:     // The square's movement direction$
+  23:     
+         ^
+
+----------------
+token: 36
+    {kind: space, spelling: " ", line: 22, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21: $
+  22:     
+         ^
+
+----------------
+token: 31
+    {kind: newline, spelling: "\n", line: 20, column: 25, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:     // The square$
+  20:     field Square square;$
+                              ^
+
+----------------
+token: 26
+    {kind: space, spelling: " ", line: 20, column: 10, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:     // The square$
+  20:     field 
+               ^
+
+----------------
+token: 21
+    {kind: space, spelling: " ", line: 20, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19:     // The square$
+  20:  
+      ^
+
+----------------
+token: 16
+    {kind: space, spelling: " ", line: 19, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18: $
+  19:  
+      ^
+
+----------------
+token: 11
+    {kind: identifier, spelling: "SquareGame", line: 17, column: 7, length: 10}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16:  */$
+  17: class SquareGame
+            ^
+
+----------------
+token: 6
+    {kind: newline, spelling: "\n", line: 7, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   6: // Expressionless version of Square.jack.$
+   7: $
+      ^
+
+----------------
+token: 1
+    {kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+   2: // and the book "The Elements of Computing Systems"$
+      ^
+
+----------------

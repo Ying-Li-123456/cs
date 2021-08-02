@@ -1,0 +1,74 @@
+Read 21 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  
+      ^
+
+----------------
+token: 20
+    {kind: space, spelling: " ", line: 1, column: 53, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  0 4.3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008 
+                                                          ^
+
+----------------
+token: 15
+    {kind: scientific, spelling: "0.0e+0", line: 1, column: 38, length: 11}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns true
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  0 4.3 3.6e-89 12125.34e9 888E0 34 000.000000E-0
+                                           ^
+
+----------------
+token: 10
+    {kind: space, spelling: " ", line: 1, column: 32, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  0 4.3 3.6e-89 12125.34e9 888E0 
+                                     ^
+
+----------------
+token: 5
+    {kind: scientific, spelling: "3.6e-89", line: 1, column: 8, length: 7}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns true
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  0 4.3 3.6e-89
+             ^
+
+----------------

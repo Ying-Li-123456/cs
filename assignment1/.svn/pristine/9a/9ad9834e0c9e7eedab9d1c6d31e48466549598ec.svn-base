@@ -1,0 +1,122 @@
+Read 35 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  
+      ^
+
+----------------
+token: 34
+    {kind: space, spelling: " ", line: 9, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   8: $
+   9:     
+         ^
+
+----------------
+token: 29
+    {kind: newline, spelling: "\n", line: 7, column: 39, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   6:  $
+   7:     . . heow.is.my.money$$$$$$$$_doing$
+                                            ^
+
+----------------
+token: 24
+    {kind: ., spelling: ".", line: 7, column: 5, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+   6:  $
+   7:     .
+          ^
+
+----------------
+token: 19
+    {kind: newline, spelling: "\n", line: 6, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   5: I_know_too_much_and_8_my_lunch$
+   6:  $
+       ^
+
+----------------
+token: 14
+    {kind: newline, spelling: "\n", line: 3, column: 28, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   2: $
+   3:     is_computer_systems____$
+                                 ^
+
+----------------
+token: 9
+    {kind: space, spelling: " ", line: 3, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   2: $
+   3:  
+      ^
+
+----------------
+token: 4
+    {kind: space, spelling: " ", line: 1, column: 20, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  hello bobis97today 
+                         ^
+
+----------------

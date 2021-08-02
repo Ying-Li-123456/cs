@@ -1,0 +1,46 @@
+Read 9 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:  
+      ^
+
+----------------
+token: 8
+    {kind: identifier, spelling: "D", line: 1, column: 9, length: 1}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:         D
+              ^
+
+----------------
+token: 3
+    {kind: space, spelling: " ", line: 1, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1:     
+         ^
+
+----------------

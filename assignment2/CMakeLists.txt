@@ -1,0 +1,87 @@
+cmake_minimum_required(VERSION 3.15)
+project(assignment2)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(bin)
+include_directories(includes)
+include_directories(lib)
+include_directories(tests)
+
+add_executable(assignment2
+        bin/diff-colours
+        bin/diffc
+        bin/disassembler
+        bin/parser
+        bin/run-tests
+        bin/tokens
+        bin/tokens-d
+        bin/translator
+        includes/abstract-syntax-tree.h
+        includes/iobuffer.h
+        includes/symbols.h
+        includes/tokeniser-d.h
+        includes/tokeniser.h
+        lib/cats/bin/diff-colours
+        lib/cats/bin/disassembler
+        lib/cats/bin/parser
+        lib/cats/bin/tokens
+        lib/cats/bin/tokens-d
+        lib/cats/bin/translator
+        lib/cats/lib.a
+        lib/macos/bin/diff-colours
+        lib/macos/bin/disassembler
+        lib/macos/bin/parser
+        lib/macos/bin/tokens
+        lib/macos/bin/tokens-d
+        lib/macos/bin/translator
+        lib/macos/disassembler
+        lib/macos/lib.a
+        lib/macos/parser
+        lib/macos/translator
+        tests/Add.hack
+        tests/Add.hack.asm
+        tests/Add.hack.asm.N
+        tests/Add.milestone
+        tests/Add.milestone.Pxml
+        tests/Add.milestone.Pxml-hack
+        tests/Badalu.hack
+        tests/Badalu.hack.asm
+        tests/Badalu.hack.asm.N
+        tests/Max.final
+        tests/Max.final.Pxml
+        tests/Max.final.Pxml-hack
+        tests/Max.hack
+        tests/Max.hack.asm
+        tests/Max.hack.asm.N
+        tests/Max.milestone
+        tests/Max.milestone.Pxml
+        tests/Max.milestone.Pxml-hack
+        tests/Pong.final
+        tests/Pong.final.Pxml
+        tests/Pong.final.Pxml-hack
+        tests/Pong.hack
+        tests/Pong.hack.asm
+        tests/Pong.hack.asm.N
+        tests/Pong.milestone
+        tests/Pong.milestone.Pxml
+        tests/Pong.milestone.Pxml-hack
+        tests/Rect.final
+        tests/Rect.final.Pxml
+        tests/Rect.final.Pxml-hack
+        tests/Rect.hack
+        tests/Rect.hack.asm
+        tests/Rect.hack.asm.N
+        tests/Rect.milestone
+        tests/Rect.milestone.Pxml
+        tests/Rect.milestone.Pxml-hack
+        disassembler
+        disassembler.cpp
+        main.cpp
+        Makefile
+        Makefile-extras
+        parser
+        parser.cpp
+        translator
+        translator.cpp)

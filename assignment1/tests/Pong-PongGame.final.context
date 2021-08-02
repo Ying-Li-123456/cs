@@ -1,0 +1,588 @@
+Read 190 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 189
+    {kind: space, spelling: " ", line: 39, column: 17, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  38: $
+  39:     let batWidth 
+                      ^
+
+----------------
+token: 184
+    {kind: space, spelling: " ", line: 39, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  38: $
+  39:    
+        ^
+
+----------------
+token: 179
+    {kind: ;, spelling: ";", line: 37, column: 28, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  36:     constructor PongGame new() {$
+  37:     do Screen.clearScreen();
+                                 ^
+
+----------------
+token: 174
+    {kind: do, spelling: "do", line: 37, column: 5, length: 2}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns true
+    token_is(token,symbol) returns false
+token_context:
+  36:     constructor PongGame new() {$
+  37:     do
+          ^
+
+----------------
+token: 169
+    {kind: newline, spelling: "\n", line: 36, column: 33, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  35:     /** Constructs a new Pong Game. */$
+  36:     constructor PongGame new() {$
+                                      ^
+
+----------------
+token: 164
+    {kind: identifier, spelling: "new", line: 36, column: 26, length: 3}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  35:     /** Constructs a new Pong Game. */$
+  36:     constructor PongGame new
+                               ^
+
+----------------
+token: 159
+    {kind: space, spelling: " ", line: 36, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  35:     /** Constructs a new Pong Game. */$
+  36:     
+         ^
+
+----------------
+token: 154
+    {kind: adhoc_comment, spelling: "* Constructs a new Pong Game. ", line: 35, column: 5, length: 34}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  34: $
+  35:     /** Constructs a new Pong Game. */
+          ^
+
+----------------
+token: 149
+    {kind: newline, spelling: "\n", line: 34, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  33:     field int batWidth;$
+  34: $
+      ^
+
+----------------
+token: 144
+    {kind: identifier, spelling: "int", line: 33, column: 11, length: 3}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  32:     // The current width of the bat$
+  33:     field int
+                ^
+
+----------------
+token: 139
+    {kind: space, spelling: " ", line: 33, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  32:     // The current width of the bat$
+  33:   
+       ^
+
+----------------
+token: 134
+    {kind: space, spelling: " ", line: 32, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  31: $
+  32:   
+       ^
+
+----------------
+token: 129
+    {kind: identifier, spelling: "lastWall", line: 30, column: 15, length: 8}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:     // The last wall that the ball bounced from.$
+  30:     field int lastWall
+                    ^
+
+----------------
+token: 124
+    {kind: space, spelling: " ", line: 30, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:     // The last wall that the ball bounced from.$
+  30:     
+         ^
+
+----------------
+token: 119
+    {kind: space, spelling: " ", line: 29, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28: $
+  29:     
+         ^
+
+----------------
+token: 114
+    {kind: newline, spelling: "\n", line: 27, column: 21, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     // The current score.$
+  27:     field int score;$
+                          ^
+
+----------------
+token: 109
+    {kind: space, spelling: " ", line: 27, column: 10, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     // The current score.$
+  27:     field 
+               ^
+
+----------------
+token: 104
+    {kind: space, spelling: " ", line: 27, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26:     // The current score.$
+  27:  
+      ^
+
+----------------
+token: 99
+    {kind: space, spelling: " ", line: 26, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25: $
+  26:  
+      ^
+
+----------------
+token: 94
+    {kind: space, spelling: " ", line: 24, column: 18, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23:     // True when the game is over$
+  24:     field boolean 
+                       ^
+
+----------------
+token: 89
+    {kind: space, spelling: " ", line: 24, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  23:     // True when the game is over$
+  24:    
+        ^
+
+----------------
+token: 84
+    {kind: space, spelling: " ", line: 23, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  22: $
+  23:    
+        ^
+
+----------------
+token: 79
+    {kind: ;, spelling: ";", line: 21, column: 19, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  20:     // The current wall that the ball is bouncing from.$
+  21:     field int wall;
+                        ^
+
+----------------
+token: 74
+    {kind: identifier, spelling: "field", line: 21, column: 5, length: 5}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  20:     // The current wall that the ball is bouncing from.$
+  21:     field
+          ^
+
+----------------
+token: 69
+    {kind: eol_comment, spelling: " The current wall that the ball is bouncing from.", line: 20, column: 5, length: 52}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19: $
+  20:     // The current wall that the ball is bouncing from.$
+          ^
+
+----------------
+token: 64
+    {kind: newline, spelling: "\n", line: 19, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  18:     field Ball ball;$
+  19: $
+      ^
+
+----------------
+token: 59
+    {kind: identifier, spelling: "Ball", line: 18, column: 11, length: 4}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  17:     // The ball$
+  18:     field Ball
+                ^
+
+----------------
+token: 54
+    {kind: space, spelling: " ", line: 18, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  17:     // The ball$
+  18:   
+       ^
+
+----------------
+token: 49
+    {kind: space, spelling: " ", line: 17, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  16: $
+  17:   
+       ^
+
+----------------
+token: 44
+    {kind: identifier, spelling: "bat", line: 15, column: 15, length: 3}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14:     // The bat$
+  15:     field Bat bat
+                    ^
+
+----------------
+token: 39
+    {kind: space, spelling: " ", line: 15, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14:     // The bat$
+  15:     
+         ^
+
+----------------
+token: 34
+    {kind: space, spelling: " ", line: 14, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  13: $
+  14:     
+         ^
+
+----------------
+token: 29
+    {kind: newline, spelling: "\n", line: 12, column: 30, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     // The singlton $
+  12:     static PongGame instance;$
+                                   ^
+
+----------------
+token: 24
+    {kind: space, spelling: " ", line: 12, column: 11, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     // The singlton $
+  12:     static 
+                ^
+
+----------------
+token: 19
+    {kind: space, spelling: " ", line: 12, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  11:     // The singlton $
+  12:  
+      ^
+
+----------------
+token: 14
+    {kind: space, spelling: " ", line: 11, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  10: $
+  11:  
+      ^
+
+----------------
+token: 9
+    {kind: identifier, spelling: "PongGame", line: 9, column: 7, length: 8}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   8:  */$
+   9: class PongGame
+            ^
+
+----------------
+token: 4
+    {kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   4: // File name: projects/11/Pong/PongGame.jack$
+   5: $
+      ^
+
+----------------

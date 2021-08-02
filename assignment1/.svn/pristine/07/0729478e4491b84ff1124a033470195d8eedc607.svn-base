@@ -1,0 +1,33 @@
+{kind: space, spelling: " ", line: 1, column: 1, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 2, length: 1}
+{kind: space, spelling: " ", line: 1, column: 3, length: 1}
+{kind: integer, spelling: "4", line: 1, column: 4, length: 1}
+{kind: space, spelling: " ", line: 1, column: 5, length: 1}
+{kind: integer, spelling: "36", line: 1, column: 6, length: 2}
+{kind: space, spelling: " ", line: 1, column: 8, length: 1}
+{kind: integer, spelling: "12125", line: 1, column: 9, length: 5}
+{kind: space, spelling: " ", line: 1, column: 14, length: 1}
+{kind: integer, spelling: "888", line: 1, column: 15, length: 3}
+{kind: space, spelling: " ", line: 1, column: 18, length: 1}
+{kind: integer, spelling: "34", line: 1, column: 19, length: 2}
+{kind: space, spelling: " ", line: 1, column: 21, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 22, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 23, length: 1}
+{kind: integer, spelling: "0", line: 1, column: 24, length: 1}
+{kind: space, spelling: " ", line: 1, column: 25, length: 1}
+{kind: integer, spelling: "235", line: 1, column: 26, length: 3}
+{kind: newline, spelling: "\n", line: 1, column: 29, length: 1}
+{kind: space, spelling: " ", line: 2, column: 1, length: 1}
+{kind: float, spelling: "0.0", line: 2, column: 2, length: 3}
+{kind: space, spelling: " ", line: 2, column: 5, length: 1}
+{kind: float, spelling: "4.36", line: 2, column: 6, length: 4}
+{kind: space, spelling: " ", line: 2, column: 10, length: 1}
+{kind: float, spelling: "12.125", line: 2, column: 11, length: 6}
+{kind: space, spelling: " ", line: 2, column: 17, length: 1}
+{kind: integer, spelling: "888", line: 2, column: 18, length: 3}
+{kind: space, spelling: " ", line: 2, column: 21, length: 1}
+{kind: integer, spelling: "34", line: 2, column: 22, length: 2}
+{kind: space, spelling: " ", line: 2, column: 24, length: 1}
+{kind: float, spelling: "0.0", line: 2, column: 25, length: 4}
+{kind: space, spelling: " ", line: 2, column: 29, length: 1}
+Read 32 tokens

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0a039a8-57b1-4ad5-a890-d0f2492c7c73" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="1aARAsNJpYh7zA7LdkLvZLN2Rcz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="language.cpp.clang-tidy" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0a039a8-57b1-4ad5-a890-d0f2492c7c73" name="Default Changelist" comment="" />
+      <created>1586176271559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586176271559</updated>
+      <workItem from="1586176272972" duration="36000" />
+      <workItem from="1586422430231" duration="2255000" />
+      <workItem from="1586430014754" duration="353000" />
+      <workItem from="1586431293208" duration="112000" />
+      <workItem from="1586431407937" duration="102000" />
+      <workItem from="1586431512061" duration="5326000" />
+      <workItem from="1586580956110" duration="9658000" />
+      <workItem from="1586600044185" duration="51644000" />
+      <workItem from="1586862837197" duration="79000" />
+      <workItem from="1586863766366" duration="4000" />
+      <workItem from="1586863813848" duration="46000" />
+      <workItem from="1586864189435" duration="2000" />
+      <workItem from="1586870711217" duration="258000" />
+      <workItem from="1586874653395" duration="243000" />
+      <workItem from="1587109506799" duration="102000" />
+      <workItem from="1587112236272" duration="230000" />
+      <workItem from="1587112470510" duration="340000" />
+      <workItem from="1587115356281" duration="117000" />
+      <workItem from="1587369025443" duration="162000" />
+      <workItem from="1587558270072" duration="25898000" />
+      <workItem from="1588036449311" duration="373000" />
+      <workItem from="1589379595548" duration="122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#C/C++" timestamp="1586431502526">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#C/C++/0.23.1440.877@0.23.1440.877" timestamp="1586431502526" />
+    <state x="239" y="198" width="762" height="653" key="EditFileWatcherDialog" timestamp="1586428492778">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="239" y="198" width="762" height="653" key="EditFileWatcherDialog/0.23.1440.877@0.23.1440.877" timestamp="1586428492778" />
+    <state x="166" y="162" key="SettingsEditor" timestamp="1586431368644">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="166" y="162" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586431368644" />
+  </component>
+</project>

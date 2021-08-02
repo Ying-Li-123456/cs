@@ -1,0 +1,288 @@
+Read 90 tokens
+
+Token Contexts:
+
+token: 0
+    {kind: newline, spelling: "\n", line: 1, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   1: $
+      ^
+
+----------------
+token: 89
+    {kind: space, spelling: " ", line: 30, column: 37, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         $
+  30:         do Main.fillMemory(8001, 16, 
+                                          ^
+
+----------------
+token: 84
+    {kind: integer, spelling: "8001", line: 30, column: 28, length: 4}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns true
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         $
+  30:         do Main.fillMemory(8001
+                                 ^
+
+----------------
+token: 79
+    {kind: space, spelling: " ", line: 30, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         $
+  30:         
+             ^
+
+----------------
+token: 74
+    {kind: space, spelling: " ", line: 30, column: 3, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  29:         $
+  30:    
+        ^
+
+----------------
+token: 69
+    {kind: space, spelling: " ", line: 29, column: 7, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:     var int result, value;$
+  29:        
+            ^
+
+----------------
+token: 64
+    {kind: space, spelling: " ", line: 29, column: 2, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  28:     var int result, value;$
+  29:   
+       ^
+
+----------------
+token: 59
+    {kind: space, spelling: " ", line: 28, column: 20, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:     function void main() {$
+  28:     var int result, 
+                         ^
+
+----------------
+token: 54
+    {kind: space, spelling: " ", line: 28, column: 8, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:     function void main() {$
+  28:     var 
+             ^
+
+----------------
+token: 49
+    {kind: space, spelling: " ", line: 28, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  27:     function void main() {$
+  28:  
+      ^
+
+----------------
+token: 44
+    {kind: (, spelling: "(", line: 27, column: 23, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  26: $
+  27:     function void main(
+                            ^
+
+----------------
+token: 39
+    {kind: identifier, spelling: "function", line: 27, column: 5, length: 8}
+token group memberships:
+    token_is(token,identifier) returns true
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  26: $
+  27:     function
+          ^
+
+----------------
+token: 34
+    {kind: newline, spelling: "\n", line: 26, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  25: $
+  26: $
+      ^
+
+----------------
+token: 29
+    {kind: space, spelling: " ", line: 22, column: 4, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  21: class Main {$
+  22:     
+         ^
+
+----------------
+token: 24
+    {kind: {, spelling: "{", line: 21, column: 12, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns true
+token_context:
+  20: $
+  21: class Main {
+                 ^
+
+----------------
+token: 19
+    {kind: newline, spelling: "\n", line: 20, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  19: $
+  20: $
+      ^
+
+----------------
+token: 14
+    {kind: newline, spelling: "\n", line: 15, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+  14: $
+  15: $
+      ^
+
+----------------
+token: 9
+    {kind: newline, spelling: "\n", line: 10, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   9: $
+  10: $
+      ^
+
+----------------
+token: 4
+    {kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+token group memberships:
+    token_is(token,identifier) returns false
+    token_is(token,integer) returns false
+    token_is(token,float) returns false
+    token_is(token,scientific) returns false
+    token_is(token,keyword) returns false
+    token_is(token,symbol) returns false
+token_context:
+   4: $
+   5: $
+      ^
+
+----------------

@@ -1,0 +1,112 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1, length: 44}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1, length: 52}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1, length: 37}
+{kind: eol_comment, spelling: " File name: projects/12/SysTest/Main.jack", line: 4, column: 1, length: 44}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS Sys class. ", line: 6, column: 1, length: 41}
+{kind: newline, spelling: "\n", line: 6, column: 42, length: 1}
+{kind: identifier, spelling: "class", line: 7, column: 1, length: 5}
+{kind: space, spelling: " ", line: 7, column: 6, length: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7, length: 4}
+{kind: space, spelling: " ", line: 7, column: 11, length: 1}
+{kind: {, spelling: "{", line: 7, column: 12, length: 1}
+{kind: newline, spelling: "\n", line: 7, column: 13, length: 1}
+{kind: newline, spelling: "\n", line: 8, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 1, length: 1}
+{kind: space, spelling: " ", line: 9, column: 2, length: 1}
+{kind: space, spelling: " ", line: 9, column: 3, length: 1}
+{kind: space, spelling: " ", line: 9, column: 4, length: 1}
+{kind: adhoc_comment, spelling: "* tests the wait method of the Sys class. ", line: 9, column: 5, length: 46}
+{kind: newline, spelling: "\n", line: 9, column: 51, length: 1}
+{kind: space, spelling: " ", line: 10, column: 1, length: 1}
+{kind: space, spelling: " ", line: 10, column: 2, length: 1}
+{kind: space, spelling: " ", line: 10, column: 3, length: 1}
+{kind: space, spelling: " ", line: 10, column: 4, length: 1}
+{kind: identifier, spelling: "function", line: 10, column: 5, length: 8}
+{kind: space, spelling: " ", line: 10, column: 13, length: 1}
+{kind: identifier, spelling: "void", line: 10, column: 14, length: 4}
+{kind: space, spelling: " ", line: 10, column: 18, length: 1}
+{kind: identifier, spelling: "main", line: 10, column: 19, length: 4}
+{kind: (, spelling: "(", line: 10, column: 23, length: 1}
+{kind: ), spelling: ")", line: 10, column: 24, length: 1}
+{kind: space, spelling: " ", line: 10, column: 25, length: 1}
+{kind: {, spelling: "{", line: 10, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 10, column: 27, length: 1}
+{kind: space, spelling: " ", line: 11, column: 1, length: 1}
+{kind: space, spelling: " ", line: 11, column: 2, length: 1}
+{kind: space, spelling: " ", line: 11, column: 3, length: 1}
+{kind: space, spelling: " ", line: 11, column: 4, length: 1}
+{kind: space, spelling: " ", line: 11, column: 5, length: 1}
+{kind: space, spelling: " ", line: 11, column: 6, length: 1}
+{kind: space, spelling: " ", line: 11, column: 7, length: 1}
+{kind: space, spelling: " ", line: 11, column: 8, length: 1}
+{kind: identifier, spelling: "var", line: 11, column: 9, length: 3}
+{kind: space, spelling: " ", line: 11, column: 12, length: 1}
+{kind: identifier, spelling: "char", line: 11, column: 13, length: 4}
+{kind: space, spelling: " ", line: 11, column: 17, length: 1}
+{kind: identifier, spelling: "key", line: 11, column: 18, length: 3}
+{kind: ;, spelling: ";", line: 11, column: 21, length: 1}
+{kind: newline, spelling: "\n", line: 11, column: 22, length: 1}
+{kind: newline, spelling: "\n", line: 12, column: 1, length: 1}
+{kind: space, spelling: " ", line: 13, column: 1, length: 1}
+{kind: space, spelling: " ", line: 13, column: 2, length: 1}
+{kind: space, spelling: " ", line: 13, column: 3, length: 1}
+{kind: space, spelling: " ", line: 13, column: 4, length: 1}
+{kind: space, spelling: " ", line: 13, column: 5, length: 1}
+{kind: space, spelling: " ", line: 13, column: 6, length: 1}
+{kind: space, spelling: " ", line: 13, column: 7, length: 1}
+{kind: space, spelling: " ", line: 13, column: 8, length: 1}
+{kind: do, spelling: "do", line: 13, column: 9, length: 2}
+{kind: space, spelling: " ", line: 13, column: 11, length: 1}
+{kind: identifier, spelling: "Output.printString", line: 13, column: 12, length: 18}
+{kind: (, spelling: "(", line: 13, column: 30, length: 1}
+{kind: string, spelling: "Wait test:", line: 13, column: 31, length: 12}
+{kind: ), spelling: ")", line: 13, column: 43, length: 1}
+{kind: ;, spelling: ";", line: 13, column: 44, length: 1}
+{kind: newline, spelling: "\n", line: 13, column: 45, length: 1}
+{kind: space, spelling: " ", line: 14, column: 1, length: 1}
+{kind: space, spelling: " ", line: 14, column: 2, length: 1}
+{kind: space, spelling: " ", line: 14, column: 3, length: 1}
+{kind: space, spelling: " ", line: 14, column: 4, length: 1}
+{kind: space, spelling: " ", line: 14, column: 5, length: 1}
+{kind: space, spelling: " ", line: 14, column: 6, length: 1}
+{kind: space, spelling: " ", line: 14, column: 7, length: 1}
+{kind: space, spelling: " ", line: 14, column: 8, length: 1}
+{kind: do, spelling: "do", line: 14, column: 9, length: 2}
+{kind: space, spelling: " ", line: 14, column: 11, length: 1}
+{kind: identifier, spelling: "Output.println", line: 14, column: 12, length: 14}
+{kind: (, spelling: "(", line: 14, column: 26, length: 1}
+{kind: ), spelling: ")", line: 14, column: 27, length: 1}
+{kind: ;, spelling: ";", line: 14, column: 28, length: 1}
+{kind: newline, spelling: "\n", line: 14, column: 29, length: 1}
+{kind: space, spelling: " ", line: 15, column: 1, length: 1}
+{kind: space, spelling: " ", line: 15, column: 2, length: 1}
+{kind: space, spelling: " ", line: 15, column: 3, length: 1}
+{kind: space, spelling: " ", line: 15, column: 4, length: 1}
+{kind: space, spelling: " ", line: 15, column: 5, length: 1}
+{kind: space, spelling: " ", line: 15, column: 6, length: 1}
+{kind: space, spelling: " ", line: 15, column: 7, length: 1}
+{kind: space, spelling: " ", line: 15, column: 8, length: 1}
+{kind: do, spelling: "do", line: 15, column: 9, length: 2}
+{kind: space, spelling: " ", line: 15, column: 11, length: 1}
+{kind: identifier, spelling: "Output.printString", line: 15, column: 12, length: 18}
+{kind: (, spelling: "(", line: 15, column: 30, length: 1}
+{kind: string, spelling: "Press any key. After 2 seconds, another message will be printed:", line: 15, column: 31, length: 66}
+{kind: ), spelling: ")", line: 15, column: 97, length: 1}
+{kind: ;, spelling: ";", line: 15, column: 98, length: 1}
+{kind: newline, spelling: "\n", line: 15, column: 99, length: 1}
+{kind: newline, spelling: "\n", line: 16, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 1, length: 1}
+{kind: space, spelling: " ", line: 17, column: 2, length: 1}
+{kind: space, spelling: " ", line: 17, column: 3, length: 1}
+{kind: space, spelling: " ", line: 17, column: 4, length: 1}
+{kind: space, spelling: " ", line: 17, column: 5, length: 1}
+{kind: space, spelling: " ", line: 17, column: 6, length: 1}
+{kind: space, spelling: " ", line: 17, column: 7, length: 1}
+{kind: space, spelling: " ", line: 17, column: 8, length: 1}
+{kind: identifier, spelling: "while", line: 17, column: 9, length: 5}
+{kind: space, spelling: " ", line: 17, column: 14, length: 1}
+{kind: (, spelling: "(", line: 17, column: 15, length: 1}
+{kind: identifier, spelling: "key", line: 17, column: 16, length: 3}
+{kind: space, spelling: " ", line: 17, column: 19, length: 1}
+Read 111 tokens

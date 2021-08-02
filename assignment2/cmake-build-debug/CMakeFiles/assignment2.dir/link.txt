@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/assignment2.dir/disassembler.cpp.o CMakeFiles/assignment2.dir/main.cpp.o CMakeFiles/assignment2.dir/parser.cpp.o CMakeFiles/assignment2.dir/translator.cpp.o  -o assignment2 

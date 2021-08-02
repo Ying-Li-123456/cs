@@ -1,0 +1,12 @@
+{kind: space, spelling: " ", line: 1, column: 1, length: 1}
+{kind: space, spelling: " ", line: 1, column: 2, length: 1}
+{kind: space, spelling: " ", line: 1, column: 3, length: 1}
+{kind: space, spelling: " ", line: 1, column: 4, length: 1}
+{kind: space, spelling: " ", line: 1, column: 5, length: 1}
+{kind: space, spelling: " ", line: 1, column: 6, length: 1}
+{kind: space, spelling: " ", line: 1, column: 7, length: 1}
+{kind: space, spelling: " ", line: 1, column: 8, length: 1}
+{kind: @, spelling: "@", line: 1, column: 9, length: 1}
+{kind: integer, spelling: "832", line: 1, column: 10, length: 3}
+{kind: newline, spelling: "\n", line: 1, column: 13, length: 1}
+Read 11 tokens

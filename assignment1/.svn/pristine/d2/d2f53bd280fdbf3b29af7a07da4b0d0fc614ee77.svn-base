@@ -1,0 +1,91 @@
+{kind: newline, spelling: "\n", line: 1, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 2, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 3, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 4, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 5, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 6, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 7, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 8, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 9, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 10, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 11, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 12, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 13, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 14, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 15, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 16, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 17, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 18, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 19, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 20, column: 1, length: 1}
+{kind: identifier, spelling: "class", line: 21, column: 1, length: 5}
+{kind: space, spelling: " ", line: 21, column: 6, length: 1}
+{kind: identifier, spelling: "Main", line: 21, column: 7, length: 4}
+{kind: space, spelling: " ", line: 21, column: 11, length: 1}
+{kind: {, spelling: "{", line: 21, column: 12, length: 1}
+{kind: newline, spelling: "\n", line: 21, column: 13, length: 1}
+{kind: space, spelling: " ", line: 22, column: 1, length: 1}
+{kind: space, spelling: " ", line: 22, column: 2, length: 1}
+{kind: space, spelling: " ", line: 22, column: 3, length: 1}
+{kind: space, spelling: " ", line: 22, column: 4, length: 1}
+{kind: newline, spelling: "\n", line: 22, column: 5, length: 1}
+{kind: newline, spelling: "\n", line: 23, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 24, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 25, column: 1, length: 1}
+{kind: newline, spelling: "\n", line: 26, column: 1, length: 1}
+{kind: space, spelling: " ", line: 27, column: 1, length: 1}
+{kind: space, spelling: " ", line: 27, column: 2, length: 1}
+{kind: space, spelling: " ", line: 27, column: 3, length: 1}
+{kind: space, spelling: " ", line: 27, column: 4, length: 1}
+{kind: identifier, spelling: "function", line: 27, column: 5, length: 8}
+{kind: space, spelling: " ", line: 27, column: 13, length: 1}
+{kind: identifier, spelling: "void", line: 27, column: 14, length: 4}
+{kind: space, spelling: " ", line: 27, column: 18, length: 1}
+{kind: identifier, spelling: "main", line: 27, column: 19, length: 4}
+{kind: (, spelling: "(", line: 27, column: 23, length: 1}
+{kind: ), spelling: ")", line: 27, column: 24, length: 1}
+{kind: space, spelling: " ", line: 27, column: 25, length: 1}
+{kind: {, spelling: "{", line: 27, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 27, column: 27, length: 1}
+{kind: space, spelling: " ", line: 28, column: 1, length: 1}
+{kind: space, spelling: " ", line: 28, column: 2, length: 1}
+{kind: space, spelling: " ", line: 28, column: 3, length: 1}
+{kind: space, spelling: " ", line: 28, column: 4, length: 1}
+{kind: identifier, spelling: "var", line: 28, column: 5, length: 3}
+{kind: space, spelling: " ", line: 28, column: 8, length: 1}
+{kind: identifier, spelling: "int", line: 28, column: 9, length: 3}
+{kind: space, spelling: " ", line: 28, column: 12, length: 1}
+{kind: identifier, spelling: "result", line: 28, column: 13, length: 6}
+{kind: ,, spelling: ",", line: 28, column: 19, length: 1}
+{kind: space, spelling: " ", line: 28, column: 20, length: 1}
+{kind: identifier, spelling: "value", line: 28, column: 21, length: 5}
+{kind: ;, spelling: ";", line: 28, column: 26, length: 1}
+{kind: newline, spelling: "\n", line: 28, column: 27, length: 1}
+{kind: space, spelling: " ", line: 29, column: 1, length: 1}
+{kind: space, spelling: " ", line: 29, column: 2, length: 1}
+{kind: space, spelling: " ", line: 29, column: 3, length: 1}
+{kind: space, spelling: " ", line: 29, column: 4, length: 1}
+{kind: space, spelling: " ", line: 29, column: 5, length: 1}
+{kind: space, spelling: " ", line: 29, column: 6, length: 1}
+{kind: space, spelling: " ", line: 29, column: 7, length: 1}
+{kind: space, spelling: " ", line: 29, column: 8, length: 1}
+{kind: newline, spelling: "\n", line: 29, column: 9, length: 1}
+{kind: space, spelling: " ", line: 30, column: 1, length: 1}
+{kind: space, spelling: " ", line: 30, column: 2, length: 1}
+{kind: space, spelling: " ", line: 30, column: 3, length: 1}
+{kind: space, spelling: " ", line: 30, column: 4, length: 1}
+{kind: space, spelling: " ", line: 30, column: 5, length: 1}
+{kind: space, spelling: " ", line: 30, column: 6, length: 1}
+{kind: space, spelling: " ", line: 30, column: 7, length: 1}
+{kind: space, spelling: " ", line: 30, column: 8, length: 1}
+{kind: do, spelling: "do", line: 30, column: 9, length: 2}
+{kind: space, spelling: " ", line: 30, column: 11, length: 1}
+{kind: identifier, spelling: "Main.fillMemory", line: 30, column: 12, length: 15}
+{kind: (, spelling: "(", line: 30, column: 27, length: 1}
+{kind: integer, spelling: "8001", line: 30, column: 28, length: 4}
+{kind: ,, spelling: ",", line: 30, column: 32, length: 1}
+{kind: space, spelling: " ", line: 30, column: 33, length: 1}
+{kind: integer, spelling: "16", line: 30, column: 34, length: 2}
+{kind: ,, spelling: ",", line: 30, column: 36, length: 1}
+{kind: space, spelling: " ", line: 30, column: 37, length: 1}
+Read 90 tokens

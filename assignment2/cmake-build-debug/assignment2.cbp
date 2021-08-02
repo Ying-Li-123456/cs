@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="assignment2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/liying/cs-projects/assignment2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/liying/cs-projects/assignment2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/liying/cs-projects/assignment2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment2">
+				<Option output="/Users/liying/cs-projects/assignment2/cmake-build-debug/assignment2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liying/cs-projects/assignment2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liying/cs-projects/assignment2/."/>
+					<Add directory="/Users/liying/cs-projects/assignment2/bin"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/includes"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/lib"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/tests"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment2/fast">
+				<Option output="/Users/liying/cs-projects/assignment2/cmake-build-debug/assignment2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liying/cs-projects/assignment2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liying/cs-projects/assignment2/."/>
+					<Add directory="/Users/liying/cs-projects/assignment2/bin"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/includes"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/lib"/>
+					<Add directory="/Users/liying/cs-projects/assignment2/tests"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liying/cs-projects/assignment2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/liying/cs-projects/assignment2/Makefile">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/Makefile-extras">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/diff-colours">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/diffc">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/disassembler">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/parser">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/run-tests">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/tokens">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/tokens-d">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/bin/translator">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/disassembler">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/disassembler.cpp">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/includes/abstract-syntax-tree.h">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/includes/iobuffer.h">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/includes/symbols.h">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/includes/tokeniser-d.h">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/includes/tokeniser.h">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/diff-colours">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/disassembler">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/parser">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/tokens">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/tokens-d">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/bin/translator">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/cats/lib.a">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/diff-colours">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/disassembler">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/parser">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/tokens">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/tokens-d">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/bin/translator">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/disassembler">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/lib.a">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/parser">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/lib/macos/translator">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/main.cpp">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/parser">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/parser.cpp">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.hack.asm">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.hack.asm.N">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.milestone">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.milestone.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Add.milestone.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Badalu.hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Badalu.hack.asm">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Badalu.hack.asm.N">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.final">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.final.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.final.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.hack.asm">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.hack.asm.N">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.milestone">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.milestone.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Max.milestone.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.final">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.final.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.final.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.hack.asm">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.hack.asm.N">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.milestone">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.milestone.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Pong.milestone.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.final">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.final.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.final.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.hack.asm">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.hack.asm.N">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.milestone">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.milestone.Pxml">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/tests/Rect.milestone.Pxml-hack">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/translator">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/translator.cpp">
+			<Option target="assignment2"/>
+		</Unit>
+		<Unit filename="/Users/liying/cs-projects/assignment2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

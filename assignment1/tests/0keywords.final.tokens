@@ -1,0 +1,28 @@
+{kind: space, spelling: " ", line: 1, column: 1, length: 1}
+{kind: space, spelling: " ", line: 1, column: 2, length: 1}
+{kind: for, spelling: "for", line: 1, column: 3, length: 3}
+{kind: newline, spelling: "\n", line: 1, column: 6, length: 1}
+{kind: newline, spelling: "\n", line: 2, column: 1, length: 1}
+{kind: do, spelling: "do", line: 3, column: 1, length: 2}
+{kind: space, spelling: " ", line: 3, column: 3, length: 1}
+{kind: space, spelling: " ", line: 3, column: 4, length: 1}
+{kind: space, spelling: " ", line: 3, column: 5, length: 1}
+{kind: real, spelling: "real", line: 3, column: 6, length: 4}
+{kind: newline, spelling: "\n", line: 3, column: 10, length: 1}
+{kind: space, spelling: " ", line: 4, column: 1, length: 1}
+{kind: space, spelling: " ", line: 4, column: 2, length: 1}
+{kind: space, spelling: " ", line: 4, column: 3, length: 1}
+{kind: space, spelling: " ", line: 4, column: 4, length: 1}
+{kind: space, spelling: " ", line: 4, column: 5, length: 1}
+{kind: space, spelling: " ", line: 4, column: 6, length: 1}
+{kind: space, spelling: " ", line: 4, column: 7, length: 1}
+{kind: space, spelling: " ", line: 4, column: 8, length: 1}
+{kind: this, spelling: "this", line: 4, column: 9, length: 4}
+{kind: newline, spelling: "\n", line: 4, column: 13, length: 1}
+{kind: do, spelling: "do", line: 5, column: 1, length: 2}
+{kind: space, spelling: " ", line: 5, column: 3, length: 1}
+{kind: pointer, spelling: "pointer", line: 5, column: 4, length: 7}
+{kind: space, spelling: " ", line: 5, column: 11, length: 1}
+{kind: for, spelling: "for", line: 5, column: 12, length: 3}
+{kind: newline, spelling: "\n", line: 5, column: 15, length: 1}
+Read 27 tokens
